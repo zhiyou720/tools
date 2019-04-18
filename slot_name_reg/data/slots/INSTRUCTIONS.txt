@@ -1,0 +1,4 @@
+1. Default order: ecarx > banma > denso > jlr
+2. Slot value: enum preferred (*_slot.map.dat)
+3. Slot name sorted in alphabetical order 
+4. The max length of slot values is 20

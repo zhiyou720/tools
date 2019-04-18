@@ -1,0 +1,12 @@
+auto_main	auto_only:gasstation:def	show|<unk> gas|<gasstationphrase> stations|<gasstationphrase> in|<unk> paris|<locality> sorted|<unk> based|<unk> on|<unk> ranking|<sort>
+auto_main	auto_only:gasstation:def	show|<unk> gas|<gasstationphrase> stations|<gasstationphrase> sorted|<unk> on|<unk> rating|<sort>
+auto_main	auto_only:localsearch:def	show|<unk> restaurants|<cat> in|<unk> madrid|<locality> sorted|<unk> based|<unk> on|<unk> top|<sort> quality|<sort>
+auto_main	auto_only:localsearch:def	show|<unk> restaurants|<cat> sorted|<unk> starting|<unk> from|<unk> the|<unk> best|<sort> one|<sort>
+auto_main	auto_only:map:def	show|<unk> me|<unk> gas|<cat> stations|<cat> with|<unk> diesel|<fueltype> sorted|<unk> by|<unk> most|<sort> positive|<sort> reviews|<sort> on|<unk> the|<unk> map|<unk>
+auto_main	auto_only:map:def	show|<unk> a|<unk> map|<unk> with|<unk> restaurants|<cat> in|<unk> montreal|<locality> sorted|<unk> on|<unk> the|<unk> best|<sort> star|<sort> rating|<sort>
+auto_main	auto_only:map:def	show|<unk> on|<unk> the|<unk> map|<unk> restaurants|<cat> sorted|<unk> on|<unk> the|<sort> basis|<sort> of|<sort> the|<sort> most|<sort> favorable|<sort> reviews|<sort>
+auto_main	auto_only:parking:def	show|<unk> covered|<category> parkings|<category> in|<unk> geneva|<locality> sorted|<unk> by|<unk> classification|<sort>
+auto_main	auto_only:parking:def	show|<unk> handicapped|<category> parkings|<category> sorted|<unk> by|<unk> star|<sort> rating|<sort>
+auto_main	auto_only:ude:na	gas|<cat> stations|<cat> with|<unk> e85|<fueltype> fuel|<fueltype> in|<unk> montreal|<locality> sorted|<unk> based|<unk> on|<unk> reviews|<sort>
+auto_main	auto_only:ude:na	restaurants|<cat> in|<unk> chiacago|<locality> sorted|<unk> on|<unk> best|<sort> rating|<sort>
+auto_main	auto_only:ude:na	sorted|<unk> by|<unk> the|<unk> highest|<sort> classification|<sort>

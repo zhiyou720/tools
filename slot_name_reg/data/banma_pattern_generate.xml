@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: slot_train_config.xml,v 1.0 2016.04.13 qiuchunfeng Exp $ --><!-- slot_train_config.xml directory file for slot extraction training resources --><CREOLE-DIRECTORY>
+	<CREOLE>
+		<TOPIC>
+			<PARAMETER NAME="corpus_path" DEFAULT="..\corpus" COMMENT="the directory file path for training corpus">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="dict_path" DEFAULT="..\SLOT_DB" COMMENT="the directory file path for training corpus">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="pattern_path" DEFAULT="..\pattern" COMMENT="the directory file path for training corpus">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="testSet_path" DEFAULT="..\test" COMMENT="the directory file path for test corpus">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="logfile_path" DEFAULT="..\log\" COMMENT="the directory file path for test corpus">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="pattern_parent_path" DEFAULT="..\" COMMENT="the directory file path for pattern files">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="tagged_corpus_path" DEFAULT="..\tmp\BANMA2\" COMMENT="the directory file path for tagged corpus">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="slotTrainingConfigfile_name" DEFAULT="slot_train_config.xml" COMMENT="the configure file name for slot model training">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="slotTrainingConfigfileTopLevel_name" DEFAULT="slot_train_top_level_config.xml" COMMENT="the configure file name for top level slot model training">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="generage_merged_config_file" DEFAULT="false" COMMENT="whether to generate the merged configure file">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="reuse_slot_in_corpus" DEFAULT="false" COMMENT="the configure file name for slot model training">
+				string
+			</PARAMETER>
+			<INTENTS-NAME>
+				<ITEM>App.Close	APP_NM</ITEM>
+				<ITEM>App.CloseBoth	</ITEM>
+				<ITEM>App.GoBack	</ITEM>
+				<ITEM>App.Open	APP_NM</ITEM>
+				<ITEM>App.OpenDynamic	</ITEM>
+				<ITEM>App.OpenStatic	</ITEM>
+				<ITEM>Car.BlackScreen.Close	</ITEM>
+				<ITEM>Car.BlackScreen.Open	</ITEM>
+				<ITEM>Car.Lighting.Close	</ITEM>
+				<ITEM>Car.Lighting.Open	</ITEM>
+				<ITEM>Car.Mute.Close	</ITEM>
+				<ITEM>Car.Mute.Open	</ITEM>
+				<ITEM>Car.OutOfAction.ACSync.Close	</ITEM>
+				<ITEM>Car.OutOfAction.ACSync.Open	</ITEM>
+				<ITEM>Car.OutOfAction.AirCondition.Max.Close	</ITEM>
+				<ITEM>Car.OutOfAction.AirCondition.Max.Open	</ITEM>
+				<ITEM>Car.OutOfAction.AirCondition.Min.Close	</ITEM>
+				<ITEM>Car.OutOfAction.AirCondition.Min.Open	</ITEM>
+				<ITEM>Car.OutOfAction.AirCondition.Mode	AC_MODE_NM</ITEM>
+				<ITEM>Car.OutOfAction.AirCondition.Off	AC_FUNCTION_NM</ITEM>
+				<ITEM>Car.OutOfAction.AirCondition.On	AC_FUNCTION_NM</ITEM>
+				<ITEM>Car.OutOfAction.AreaControl.Close	</ITEM>
+				<ITEM>Car.OutOfAction.AreaControl.Open	</ITEM>
+				<ITEM>Car.OutOfAction.ClimateControl.Decrease	LEVEL_EM#SEAT_POSITION_NM</ITEM>
+				<ITEM>Car.OutOfAction.ClimateControl.Increase	LEVEL_EM#SEAT_POSITION_NM</ITEM>
+				<ITEM>Car.OutOfAction.ClimateControl.Inquire	</ITEM>
+				<ITEM>Car.OutOfAction.ClimateControl.Max	SEAT_POSITION_NM</ITEM>
+				<ITEM>Car.OutOfAction.ClimateControl.Min	SEAT_POSITION_NM</ITEM>
+				<ITEM>Car.OutOfAction.ClimateControl.Set	LEVEL_EM#SEAT_POSITION_NM</ITEM>
+				<ITEM>Car.OutOfAction.Dormer.Close	DEGREE_NM</ITEM>
+				<ITEM>Car.OutOfAction.Dormer.Open	DEGREE_NM</ITEM>
+				<ITEM>Car.OutOfAction.DormerCurtain.Close	</ITEM>
+				<ITEM>Car.OutOfAction.DormerCurtain.Open	</ITEM>
+				<ITEM>Car.OutOfAction.Environment	ENVIRONMENT_MODE_NM#SEAT_POSITION_NM</ITEM>
+				<ITEM>Car.OutOfAction.Environment.Close	ENVIRONMENT_MODE_NM#SEAT_POSITION_NM</ITEM>
+				<ITEM>Car.OutOfAction.Filter.Close	</ITEM>
+				<ITEM>Car.OutOfAction.Filter.Open	</ITEM>
+				<ITEM>Car.OutOfAction.SeatHeating.Close	SEAT_POSITION_NM</ITEM>
+				<ITEM>Car.OutOfAction.SeatHeating.Open	SEAT_POSITION_NM</ITEM>
+				<ITEM>Car.OutOfAction.Ventilation.Close	</ITEM>
+				<ITEM>Car.OutOfAction.Ventilation.Open	</ITEM>
+				<ITEM>Car.OutOfAction.Wind.Avoid	AIR_POSITION#BLOWING_POSITION</ITEM>
+				<ITEM>Car.OutOfAction.Wind.Direct	AIR_POSITION#BLOWING_POSITION</ITEM>
+				<ITEM>Car.OutOfAction.WindLevel.Decrease	</ITEM>
+				<ITEM>Car.OutOfAction.WindLevel.Increase	</ITEM>
+				<ITEM>Car.OutOfAction.WindLevel.Max	</ITEM>
+				<ITEM>Car.OutOfAction.WindLevel.Min	</ITEM>
+				<ITEM>Car.OutOfAction.WindMode	WIND_MODE_NM</ITEM>
+				<ITEM>Car.OutOfAction.WindOrientation.Avoid.Close	AIR_POSITION</ITEM>
+				<ITEM>Car.OutOfAction.WindOrientation.Avoid.Open	AIR_POSITION</ITEM>
+				<ITEM>Car.OutOfAction.WindOrientation.Blow.Close	AIR_POSITION</ITEM>
+				<ITEM>Car.OutOfAction.WindOrientation.Blow.Open	AIR_POSITION</ITEM>
+				<ITEM>Car.OutOfAction.WindOrientation.Direct.Close	AIR_POSITION</ITEM>
+				<ITEM>Car.OutOfAction.WindOrientation.Direct.Open	AIR_POSITION</ITEM>
+				<ITEM>Car.OutOfAction.WindOrientation.Scavenging.Close	AIR_POSITION</ITEM>
+				<ITEM>Car.OutOfAction.WindOrientation.Scavenging.Open	AIR_POSITION</ITEM>
+				<ITEM>Car.OutOfAction.Window.Close	SEAT_POSITION_NM#DEGREE_NM</ITEM>
+				<ITEM>Car.OutOfAction.Window.Open	SEAT_POSITION_NM#DEGREE_NM</ITEM>
+				<ITEM>Car.OutOfAction.Wiper.Close	</ITEM>
+				<ITEM>Car.OutOfAction.Wiper.Decrease	</ITEM>
+				<ITEM>Car.OutOfAction.Wiper.Increase	</ITEM>
+				<ITEM>Car.OutOfAction.Wiper.Mode	WIPER_MODE_NM</ITEM>
+				<ITEM>Car.OutOfAction.Wiper.Mode.Close	WIPER_MODE_NM</ITEM>
+				<ITEM>Car.OutOfAction.Wiper.Open	</ITEM>
+				<ITEM>Car.Trunk.Close	</ITEM>
+				<ITEM>Car.Trunk.Open	</ITEM>
+				<ITEM>Car.Volume.Dec	</ITEM>
+				<ITEM>Car.Volume.Inc	</ITEM>
+				<ITEM>EasterEgg.Dialect	DIALECT_NM</ITEM>
+				<ITEM>EasterEgg.SingASong	</ITEM>
+				<ITEM>Ent.CancelAudiobookCollect	ABOOK_TYPE_NM</ITEM>
+				<ITEM>Ent.CancelCollect	</ITEM>
+				<ITEM>Ent.CancelMusicCollect	MUSIC_TYPE_NM</ITEM>
+				<ITEM>Ent.Collect	</ITEM>
+				<ITEM>Ent.CollectAudiobook	ABOOK_TYPE_NM</ITEM>
+				<ITEM>Ent.CollectMusic	MUSIC_TYPE_NM</ITEM>
+				<ITEM>Ent.Continue	ABOOK_TYPE_NM#MUSIC_TYPE_NM#RADIO_TYPE_NM</ITEM>
+				<ITEM>Ent.MusicPlay	MUSIC_TYPE_NM</ITEM>
+				<ITEM>Ent.Next	</ITEM>
+				<ITEM>Ent.NextAudiobook	ABOOK_TYPE_NM</ITEM>
+				<ITEM>Ent.NextTrack	MUSIC_TYPE_NM</ITEM>
+				<ITEM>Ent.Pause	</ITEM>
+				<ITEM>Ent.PauseAudiobook	ABOOK_TYPE_NM</ITEM>
+				<ITEM>Ent.PauseTrack	MUSIC_TYPE_NM</ITEM>
+				<ITEM>Ent.Play	</ITEM>
+				<ITEM>Ent.PlayAccompaniment	SONG_NM</ITEM>
+				<ITEM>Ent.PlayAudiobook	ABOOK_TYPE_NM</ITEM>
+				<ITEM>Ent.PlayCollection	MUSIC_TYPE_NM</ITEM>
+				<ITEM>Ent.PlayEnsemble	</ITEM>
+				<ITEM>Ent.PlayFavouriteAudiobook	ABOOK_TYPE_NM</ITEM>
+				<ITEM>Ent.PlayMode	PLAY_MODE_NM</ITEM>
+				<ITEM>Ent.PlayMusic	ARTIST_NM#SONG_NM#MUSIC_TYPE_NM</ITEM>
+				<ITEM>Ent.PlayMusicBySource	SOURCE_NM#MUSIC_TYPE_NM</ITEM>
+				<ITEM>Ent.PlayRollingHeadline	</ITEM>
+				<ITEM>Ent.PlayThemeSong	</ITEM>
+				<ITEM>Ent.PlayTopList	CHART_NM#MUSIC_APP_NM</ITEM>
+				<ITEM>Ent.Previous	</ITEM>
+				<ITEM>Ent.PreviousAudiobook	ABOOK_TYPE_NM</ITEM>
+				<ITEM>Ent.PreviousTrack	MUSIC_TYPE_NM</ITEM>
+				<ITEM>Gen.AddDriving	</ITEM>
+				<ITEM>Gen.AddFleet	</ITEM>
+				<ITEM>Gen.Cancel	</ITEM>
+				<ITEM>Gen.Confirm	</ITEM>
+				<ITEM>Gen.ConfirmExit	</ITEM>
+				<ITEM>Gen.DrivingMap	</ITEM>
+				<ITEM>Gen.Exit	</ITEM>
+				<ITEM>Gen.FleetMap	</ITEM>
+				<ITEM>Gen.Help	</ITEM>
+				<ITEM>Gen.InputPassword	</ITEM>
+				<ITEM>Gen.More	</ITEM>
+				<ITEM>Gen.Next	</ITEM>
+				<ITEM>Gen.Previous	</ITEM>
+				<ITEM>Gen.RestaurantReserve	COOK_STYLE_NM#RESTAURANT_NM#LOCATION_NM</ITEM>
+				<ITEM>Gen.ScreenShot	</ITEM>
+				<ITEM>Gen.Search	</ITEM>
+				<ITEM>Gen.Select	SELECT_NUM#SELECT_TYPE_NM#SELECT_ORDER_NM</ITEM>
+				<ITEM>Gen.SelectNone	</ITEM>
+				<ITEM>General.Bluetooth.Close	</ITEM>
+				<ITEM>General.Bluetooth.Open	</ITEM>
+				<ITEM>General.Brightness.Dec	</ITEM>
+				<ITEM>General.Brightness.Inc	</ITEM>
+				<ITEM>General.Brightness.Max	</ITEM>
+				<ITEM>General.Brightness.Min	</ITEM>
+				<ITEM>General.Drone.Fly	</ITEM>
+				<ITEM>General.Drone.Land	</ITEM>
+				<ITEM>General.Hotspot.Close	</ITEM>
+				<ITEM>General.Hotspot.Open	</ITEM>
+				<ITEM>General.LivePhoto	</ITEM>
+				<ITEM>General.Record.End	</ITEM>
+				<ITEM>General.Record.Start	</ITEM>
+				<ITEM>General.SurveillanceCamera.Close	</ITEM>
+				<ITEM>General.SurveillanceCamera.Open	</ITEM>
+				<ITEM>General.TakePhoto	</ITEM>
+				<ITEM>General.Traffic.Reminder.Close	</ITEM>
+				<ITEM>General.Traffic.Reminder.Open	</ITEM>
+				<ITEM>General.TrafficRestriction.Close	</ITEM>
+				<ITEM>General.TrafficRestriction.Open	</ITEM>
+				<ITEM>General.Wifi.Close	</ITEM>
+				<ITEM>General.Wifi.Open	</ITEM>
+				<ITEM>Nav.ConfirmNavigation	</ITEM>
+				<ITEM>Nav.ConfirmRouteType	ROUTE_TYPE_NM</ITEM>
+				<ITEM>Nav.EditDefaultAddress	ADDRESS_TYPE_NM</ITEM>
+				<ITEM>Nav.GetCurrentPosition	</ITEM>
+				<ITEM>Nav.InquireTimeRemaining	ADDRESS_NM#POI_CATEGORY_NM</ITEM>
+				<ITEM>Nav.InquireTraffic	ADDRESS_NM</ITEM>
+				<ITEM>Nav.MapDirection	MAP_DIRECTION_NM</ITEM>
+				<ITEM>Nav.MapMode	MAP_MODE_NM</ITEM>
+				<ITEM>Nav.MapZoomIn	MAP_TYPE_NM#MAP_SCALE_NM</ITEM>
+				<ITEM>Nav.MapZoomMax	MAP_TYPE_NM#MAP_SCALE_NM</ITEM>
+				<ITEM>Nav.MapZoomMin	MAP_TYPE_NM#MAP_SCALE_NM</ITEM>
+				<ITEM>Nav.MapZoomOut	MAP_TYPE_NM#MAP_SCALE_NM</ITEM>
+				<ITEM>Nav.Navigation	</ITEM>
+				<ITEM>Nav.QuitNavigation	</ITEM>
+				<ITEM>Nav.QuitRoutePreview	</ITEM>
+				<ITEM>Nav.RoutePreview	</ITEM>
+				<ITEM>Nav.RouteType	ROUTE_TYPE_NM</ITEM>
+				<ITEM>Nav.RouteType.Close	ROUTE_TYPE_NM</ITEM>
+				<ITEM>Nav.SearchAlongWay	POI_CATEGORY_NM</ITEM>
+				<ITEM>Nav.SelectAddress	ADDRESS_TYPE_NM</ITEM>
+				<ITEM>Nav.SetDefaultAddress	ADDRESS_TYPE_NM</ITEM>
+				<ITEM>Nav.SetDestinationByDefaultAddress	ADDRESS_TYPE_NM</ITEM>
+				<ITEM>Nav.SetDestinationByPOICategory	POI_CATEGORY_NM#ADDRESS_NM#POI_CONSTRAINT_PARKING#POI_CONSTRAINT_WIFI#POI_CONSTRAINT_DISCOUNT#POI_CONSTRAINT_SCORE#NEARBY_NM#ROUTE_CRITERIA_NM</ITEM>
+				<ITEM>Nav.ShowMap	</ITEM>
+				<ITEM>Other.OtherTopics	</ITEM>
+				<ITEM>Phone.BCALL	</ITEM>
+				<ITEM>Phone.CallBackMissed	</ITEM>
+				<ITEM>Phone.CancelCall	</ITEM>
+				<ITEM>Phone.ConfirmCallBack	</ITEM>
+				<ITEM>Phone.ConfirmRedial	</ITEM>
+				<ITEM>Phone.DialByContact	CONTACT_NM</ITEM>
+				<ITEM>Phone.DialNumber	PHONE_NR</ITEM>
+				<ITEM>Phone.DialPartNumber	PHONE_NR_PRE#PHONE_NR_SUF</ITEM>
+				<ITEM>Phone.PhoneMenu	</ITEM>
+				<ITEM>Phone.Redial	</ITEM>
+				<ITEM>Phone.ReplaceNumber	ORIGIN_PHONE_NR#REPLACE_PHONE_NR#NEG_PHONE_NR</ITEM>
+				<ITEM>Phone.ShowPhoneBook	</ITEM>
+				<ITEM>Phone.TriggerCall	</ITEM>
+				<ITEM>Radio.AddToFavourite	RADIO_TYPE_NM</ITEM>
+				<ITEM>Radio.NextStation	RADIO_TYPE_NM</ITEM>
+				<ITEM>Radio.Pause	RADIO_TYPE_NM</ITEM>
+				<ITEM>Radio.PlayFavourite	RADIO_TYPE_NM</ITEM>
+				<ITEM>Radio.PlayRadio	RADIO_TYPE_NM</ITEM>
+				<ITEM>Radio.PreviousStation	RADIO_TYPE_NM</ITEM>
+				<ITEM>Radio.RemoveFromFavourite	RADIO_TYPE_NM</ITEM>
+				<ITEM>Radio.SetRadioStationbyFrequency	FREQ_NR#RADIO_TYPE_NM</ITEM>
+				<ITEM>Radio.SetRadioStationbyName	RADIO_STATION_NM#RADIO_TYPE_NM</ITEM>
+			</INTENTS-NAME>
+		</TOPIC>
+	</CREOLE>
+</CREOLE-DIRECTORY>

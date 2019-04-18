@@ -1,0 +1,378 @@
+云 A
+云 C
+云D
+云E
+云 F
+云 G
+云 H
+云 J
+云 K
+云 L
+云 M
+云N
+云 P
+云 Q
+云R
+云 S
+京 A
+京B
+京 C
+京 E
+京 F
+京 G
+京 H
+京 O
+冀 A
+冀B
+冀 C
+冀D
+冀E
+冀F
+冀 G
+冀H
+冀 J
+冀T
+吉 A
+吉B
+吉 C
+吉D
+吉E
+吉 F
+吉 G
+吉 H
+吉 J
+川 A
+川B
+川 C
+川D
+川 E
+川 F
+川 H
+川 J
+川 K
+川 L
+川 M
+川 Q
+川 R
+川 S
+川 T
+川U
+川 V
+川 W
+川 X
+川 Y
+川 Z
+新 A
+新 B
+新 C
+新 D
+新E
+新 F
+新 G
+新 H
+新 J
+新K
+新 L
+新 M
+新 N
+新 P
+新 Q
+新R
+晋A
+晋B
+晋C
+晋D
+晋E
+晋F
+晋H
+晋J
+晋K
+晋L
+晋M
+桂 A
+桂B
+桂 C
+桂D
+桂E
+桂 F
+桂 G
+桂 H
+桂 J
+桂 K
+桂L
+桂M
+桂N
+桂P
+桂R
+冀R
+沪 A
+沪B
+沪 C
+沪D
+津 A
+津B
+津 C
+津 E
+浙A
+浙B
+浙 C
+浙D
+浙E
+浙F
+浙 G
+浙H
+浙 J
+浙K
+浙L
+渝 A
+渝B
+渝 C
+渝 F
+渝 G
+渝 H
+湘 A
+湘B
+湘 C
+湘D
+湘E
+湘 F
+湘 G
+湘 H
+湘 J
+湘 K
+湘 L
+湘 M
+湘N
+湘 S
+湘U
+琼 A
+琼B
+琼 C
+琼D
+琼E
+甘A
+甘B
+甘C
+甘D
+甘E
+甘 F
+甘 G
+甘H
+甘J
+甘K
+甘L
+甘M
+甘N
+甘P
+皖 A
+皖B
+皖 C
+皖D
+皖E
+皖 F
+皖 G
+皖H
+皖 J
+皖K
+皖L
+皖M
+皖N
+皖P
+皖 Q
+皖R
+皖 S
+粤 A
+粤B
+粤 C
+粤D
+粤E
+粤 F
+粤 G
+粤 H
+粤 J
+粤 K
+粤 L
+粤 M
+粤 P
+粤 Q
+粤R
+粤 S
+粤T
+粤U
+粤 V
+粤 W
+粤 X
+粤Y
+粤 Z
+苏 A
+苏B
+苏 C
+苏D
+苏E
+苏 F
+苏 G
+苏 H
+苏 J
+苏 K
+苏 L
+苏 M
+苏N
+蒙 A
+蒙B
+蒙 C
+蒙D
+蒙E
+蒙 F
+蒙 G
+蒙 H
+蒙 J
+蒙 K
+蒙L
+蒙M
+藏 A
+藏 B
+藏 C
+藏 D
+藏 E
+藏 F
+藏 G
+藏 H
+藏 J
+豫A
+豫B
+豫 C
+豫D
+豫E
+豫F
+豫 G
+豫H
+豫 J
+豫K
+豫L
+豫M
+豫N
+豫P
+豫 Q
+豫R
+豫S
+豫U
+贵 A
+贵B
+贵 C
+贵D
+贵E
+贵 F
+贵 G
+贵 H
+贵 J
+赣 A
+赣B
+赣 C
+赣D
+赣 E
+赣 F
+赣 G
+赣 H
+赣 J
+赣 K
+赣L
+赣M
+辽 A
+辽B
+辽 C
+辽D
+辽E
+辽F
+辽 G
+辽 H
+辽 J
+辽 K
+辽L
+辽M
+辽N
+辽P
+辽 V
+鄂 A
+鄂B
+鄂 C
+鄂D
+鄂E
+鄂F
+鄂 G
+鄂 H
+鄂 J
+鄂 K
+鄂L
+鄂M
+鄂N
+鄂P
+鄂 Q
+鄂R
+鄂 S
+闽A
+闽B
+闽 C
+闽D
+闽E
+闽F
+闽G
+闽H
+闽 J
+闽K
+陕 A
+陕B
+陕 C
+陕D
+陕E
+陕F
+陕 G
+陕 H
+陕 J
+陕K
+陕U
+陕 V
+青 A
+青B
+青 C
+青D
+青E
+青 F
+青 G
+青 H
+鲁 A
+鲁B
+鲁 C
+鲁D
+鲁E
+鲁 F
+鲁 G
+鲁 H
+鲁 J
+鲁 K
+鲁L
+鲁M
+鲁N
+鲁P
+鲁 Q
+鲁R
+鲁 S
+鲁U
+鲁 V
+鲁 W
+鲁 W
+鲁Y
+黑A
+黑B
+黑C
+黑D
+黑E
+黑 F
+黑 G
+黑H
+黑J
+黑K
+黑L
+黑M
+黑N
+黑P
+黑R

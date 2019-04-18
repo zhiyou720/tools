@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: slot_train_config.xml,v 1.0 2016.04.13 qiuchunfeng Exp $ --><!-- slot_train_config.xml directory file for slot extraction training resources --><CREOLE-DIRECTORY>
+	<CREOLE>
+		<TOPIC>
+			<PARAMETER NAME="corpus_path" DEFAULT="..\corpus" COMMENT="the directory file path for training corpus">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="dict_path" DEFAULT="..\SLOT_DB" COMMENT="the directory file path for training corpus">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="pattern_path" DEFAULT="..\pattern" COMMENT="the directory file path for training corpus">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="testSet_path" DEFAULT="..\test" COMMENT="the directory file path for test corpus">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="logfile_path" DEFAULT="..\log" COMMENT="the directory file path for test corpus">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="pattern_parent_path" DEFAULT="..\" COMMENT="the directory file path for pattern files">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="tagged_corpus_path" DEFAULT="..\tmp\eCarX2\" COMMENT="the directory file path for tagged corpus">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="slotTrainingConfigfile_name" DEFAULT="slot_train_config.xml" COMMENT="the configure file name for slot model training">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="slotTrainingConfigfileTopLevel_name" DEFAULT="slot_train_top_level_config.xml" COMMENT="the configure file name for top level slot model training">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="generage_merged_config_file" DEFAULT="false" COMMENT="whether to generate the merged configure file">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="reuse_slot_in_corpus" DEFAULT="false" COMMENT="the configure file name for slot model training">
+				string
+			</PARAMETER>
+			<INTENTS-NAME>
+				<ITEM>App.CheckNews	NEWSTYPE_NM#CITY_NM</ITEM>
+				<ITEM>App.CloseApp	APP_NM</ITEM>
+				<ITEM>App.CloseNews</ITEM>
+				<ITEM>App.NextArticle</ITEM>
+				<ITEM>App.PreviousArticle</ITEM>
+				<ITEM>App.StartApp	APP_NM</ITEM>
+				<ITEM>App.StockQuery.Index	STOCKMARKET_NM</ITEM>
+				<ITEM>App.StockQuery.Price	STOCKNAME_NM#STOCKCODE_NR</ITEM>
+				<ITEM>App.TicketQuery.Air	TOCITY_NM#FROMCITY_NM#GENERAL_TIME_NM#HOUR_NR#FLIGHT_COMPANY_NM#FLIGHT_NR#AM_PM_NM</ITEM>
+				<ITEM>App.TicketQuery.Railway	TOCITY_NM#FROMCITY_NM#GENERAL_TIME_NM#HOUR_NR#TRAIN_TYPE_NM#AM_PM_NM</ITEM>
+				<ITEM>Cal.InquireHolidayArrange	HOLIDAY_NM</ITEM>
+				<ITEM>Cal.InquireLunarDate	GENERAL_TIME_NM#LUNAR_DATE</ITEM>
+				<ITEM>Cal.SetUpReminder	GENERAL_TIME_NM#REMINDER_SUBJECT_NM#REMINDER_SUBJECT_NM</ITEM>
+				<ITEM>Car.Brightness.Dec	BRIGHTNESS_STEP_NR</ITEM>
+				<ITEM>Car.Brightness.Inc	BRIGHTNESS_STEP_NR</ITEM>
+				<ITEM>Car.Brightness.Max	</ITEM>
+				<ITEM>Car.Brightness.Min	</ITEM>
+				<ITEM>Car.ChangeWakeupWord	WUW_NM</ITEM>
+				<ITEM>Car.Clean.WindShield	WIND_SHIELD_NM</ITEM>
+				<ITEM>Car.OutOfAction.AC.Max	SEAT_NM</ITEM>
+				<ITEM>Car.OutOfAction.AC.Min	SEAT_NM</ITEM>
+				<ITEM>Car.OutOfAction.ACDeforst.Off	DEFORST_MODE_NM#WINDOW_POSITION_EM</ITEM>
+				<ITEM>Car.OutOfAction.ACDeforst.On	DEFORST_MODE_NM#WINDOW_POSITION_EM</ITEM>
+				<ITEM>Car.OutOfAction.AirCondition.Mode	AC_MODE_NM</ITEM>
+				<ITEM>Car.OutOfAction.AirCondition.Mode.Off	AC_MODE_NM</ITEM>
+				<ITEM>Car.OutOfAction.AirCondition.Off	</ITEM>
+				<ITEM>Car.OutOfAction.AirCondition.On	</ITEM>
+				<ITEM>Car.OutOfAction.BackTrunk.Off	</ITEM>
+				<ITEM>Car.OutOfAction.BackTrunk.On	</ITEM>
+				<ITEM>Car.OutOfAction.ChangeDrivingMode	DRIVING_MODE_NM</ITEM>
+				<ITEM>Car.OutOfAction.ClimateControl	TEMPERATURE_NR#SEAT_NM</ITEM>
+				<ITEM>Car.OutOfAction.ClimateControl.Decrease	TEMPERATURE_DEC_NR#SEAT_NM</ITEM>
+				<ITEM>Car.OutOfAction.ClimateControl.Increase	TEMPERATURE_INC_NR#SEAT_NM</ITEM>
+				<ITEM>Car.OutOfAction.HUD.Off</ITEM>
+				<ITEM>Car.OutOfAction.HUD.On</ITEM>
+				<ITEM>Car.OutOfAction.Light.Off	LIGHT_NM</ITEM>
+				<ITEM>Car.OutOfAction.Light.On	LIGHT_NM</ITEM>
+				<ITEM>Car.OutOfAction.OilTankCover.Off</ITEM>
+				<ITEM>Car.OutOfAction.OilTankCover.On</ITEM>
+				<ITEM>Car.OutOfAction.PowerfulCoolDown	</ITEM>
+				<ITEM>Car.OutOfAction.PowerfulWarmUp	</ITEM>
+				<ITEM>Car.OutOfAction.SeatHeat	SEAT_NM</ITEM>
+				<ITEM>Car.OutOfAction.SeatHeat.Off	SEAT_NM</ITEM>
+				<ITEM>Car.OutOfAction.SeatVentilation.Off	SEAT_NM</ITEM>
+				<ITEM>Car.OutOfAction.SeatVentilation.On	SEAT_NM</ITEM>
+				<ITEM>Car.OutOfAction.SteeringWheelHeat.Off	</ITEM>
+				<ITEM>Car.OutOfAction.SteeringWheelHeat.On	</ITEM>
+				<ITEM>Car.OutOfAction.Sunroof.Off	SUNROOF_STATUS_NM</ITEM>
+				<ITEM>Car.OutOfAction.Sunroof.On	SUNROOF_STATUS_NM</ITEM>
+				<ITEM>Car.OutOfAction.Sunroofcurtain.Off	SUNROOF_STATUS_NM</ITEM>
+				<ITEM>Car.OutOfAction.Sunroofcurtain.On	SUNROOF_STATUS_NM</ITEM>
+				<ITEM>Car.OutOfAction.Ventilation.Off	</ITEM>
+				<ITEM>Car.OutOfAction.Ventilation.On	</ITEM>
+				<ITEM>Car.OutOfAction.WindCleaner.Off	</ITEM>
+				<ITEM>Car.OutOfAction.WindCleaner.On	</ITEM>
+				<ITEM>Car.OutOfAction.WindCleanerLevel	WIND_CLEANER_LEVEL_NR</ITEM>
+				<ITEM>Car.OutOfAction.WindCleanerLevel.Decrease	WINDCLEANERLEVEL_DEC_NR</ITEM>
+				<ITEM>Car.OutOfAction.WindCleanerLevel.Increase	WINDCLEANERLEVEL_INC_NR</ITEM>
+				<ITEM>Car.OutOfAction.WindCleanerLevel.Maximum	</ITEM>
+				<ITEM>Car.OutOfAction.WindCleanerLevel.Minimum	</ITEM>
+				<ITEM>Car.OutOfAction.WindLevel	WIND_LEVEL_NR#WIND_LEVEL_NM</ITEM>
+				<ITEM>Car.OutOfAction.WindLevel.Decrease	WINDLEVEL_DEC_NR</ITEM>
+				<ITEM>Car.OutOfAction.WindLevel.Increase	WINDLEVEL_INC_NR</ITEM>
+				<ITEM>Car.OutOfAction.WindLevel.Maximum	</ITEM>
+				<ITEM>Car.OutOfAction.WindLevel.Minimum	</ITEM>
+				<ITEM>Car.OutOfAction.WindMode	WIND_MODE_NM</ITEM>
+				<ITEM>Car.OutOfAction.Window.High	WINDOW_LOCATION_NM#WINDOW_STATUS_NM#</ITEM>
+				<ITEM>Car.OutOfAction.Window.Low	WINDOW_LOCATION_NM#WINDOW_STATUS_NM#</ITEM>
+				<ITEM>Car.OutOfAction.Window.Off	WINDOW_LOCATION_NM#WINDOW_STATUS_NM</ITEM>
+				<ITEM>Car.OutOfAction.Window.On	WINDOW_LOCATION_NM#WINDOW_STATUS_NM</ITEM>
+				<ITEM>Car.OutOfAction.Wiper.Off	WIPER_NM</ITEM>
+				<ITEM>Car.OutOfAction.Wiper.On	WIPER_NM</ITEM>
+				<ITEM>Car.OutofAction.SeatHeat.Dec	TEMPERATURE_DEC_NR#TEMPERATURE_NR#SEAT_NM#</ITEM>
+				<ITEM>Car.OutofAction.SeatHeat.Inc	TEMPERATURE_INC_NR#TEMPERATURE_NR#SEAT_NM#</ITEM>
+				<ITEM>Car.OutofAction.SeatHeat.Set	TEMPERATURE_NR#SEAT_NM#</ITEM>
+				<ITEM>Car.Screen.Mode	SCREEN_MODE_NM</ITEM>
+				<ITEM>Car.StartEngine	</ITEM>
+				<ITEM>Ent.CancelMusicCollect	</ITEM>
+				<ITEM>Ent.CollectMusic	</ITEM>
+				<ITEM>Ent.Continue	MEDIA_SOURCE_NM#</ITEM>
+				<ITEM>Ent.DownloadMusic</ITEM>
+				<ITEM>Ent.Exit	</ITEM>
+				<ITEM>Ent.GetArtistInformation	</ITEM>
+				<ITEM>Ent.GetSongInformation	</ITEM>
+				<ITEM>Ent.Mute	</ITEM>
+				<ITEM>Ent.NextTrack	MEDIA_SOURCE_NM#</ITEM>
+				<ITEM>Ent.Pause	MEDIA_SOURCE_NM#</ITEM>
+				<ITEM>Ent.PlayFavourites	</ITEM>
+				<ITEM>Ent.PlayMode	PLAY_MODE_NM</ITEM>
+				<ITEM>Ent.PlayMusic	ALBUM_NM#ARTIST_NM#GENRE_NM#SONG_NM#MEDIA_SOURCE_NM</ITEM>
+				<ITEM>Ent.PlayMusicBySource.BluetoothPlayer	</ITEM>
+				<ITEM>Ent.PlayMusicBySource.CD	</ITEM>
+				<ITEM>Ent.PlayMusicBySource.Online	</ITEM>
+				<ITEM>Ent.PlayMusicBySource.Random	</ITEM>
+				<ITEM>Ent.PlayMusicBySource.SD	</ITEM>
+				<ITEM>Ent.PlayMusicBySource.USB	USB_NR</ITEM>
+				<ITEM>Ent.PlayNetRadio	NETRADIO_GENRE_NM#NETRADIO_TITLE_NM#NETRADIO_AUTHOR_NM#</ITEM>
+				<ITEM>Ent.PreviousTrack	MEDIA_SOURCE_NM#</ITEM>
+				<ITEM>Ent.Unmute	</ITEM>
+				<ITEM>Ent.Volume.Balance	SEAT_NM</ITEM>
+				<ITEM>Ent.Volume.Dec	VOLUME_SOURCE_NM#VOLUME_PERCENT_NR#VOLUME_STEP_NR</ITEM>
+				<ITEM>Ent.Volume.Inc	VOLUME_SOURCE_NM#VOLUME_PERCENT_NR#VOLUME_STEP_NR</ITEM>
+				<ITEM>Ent.Volume.Max	VOLUME_SOURCE_NM#</ITEM>
+				<ITEM>Ent.Volume.Min	VOLUME_SOURCE_NM#</ITEM>
+				<ITEM>Ent.Volume.Settings	VOLUME_SOURCE_NM#VOLUME_STATUS_NM#VOLUME_NR#VOLUME_PERCENT_NR#</ITEM>
+				<ITEM>Gen.Cancel	</ITEM>
+				<ITEM>Gen.GetCurrentDate	</ITEM>
+				<ITEM>Gen.Help	HELPTOPIC_NM</ITEM>
+                <ITEM>Gen.HelpTopic	HELPTOPIC_NM#</ITEM>
+				<ITEM>Gen.HelpExamples	</ITEM>
+				<ITEM>Gen.InquireCarRestriction	GENERAL_TIME_NM#CITY_NM</ITEM>
+				<ITEM>Gen.InquireCarViolation	</ITEM>
+				<ITEM>Gen.InquirePlateNumBelong	PLATE_NR</ITEM>
+				<ITEM>Gen.Negate	</ITEM>
+				<ITEM>Gen.NextPage	</ITEM>
+				<ITEM>Gen.PreviousPage	</ITEM>
+				<ITEM>Gen.SelectEntryByLineNumber	ENTRY_LIST_NR	</ITEM>
+				<ITEM>Mes.SendMessageToContact	CONTACT_NM#CONTACT_RELATION_NM</ITEM>
+				<ITEM>Mes.SendMyLocation	CONTACT_NM#CONTACT_RELATION_NM</ITEM>
+				<ITEM>Nav.AddAddressToRoute	POI_CATEGORY_NM#ADDRESS_NM#AVOID_MODE_NM</ITEM>
+				<ITEM>Nav.GetCurrentPosition	</ITEM>
+				<ITEM>Nav.GuidenceMode	GUIDENCE_MODE_NM</ITEM>
+				<ITEM>Nav.InquireDistanceRemaining	ADDRESS_NM</ITEM>
+				<ITEM>Nav.InquireTimeOfArrival	</ITEM>
+				<ITEM>Nav.InquireTimeRemaining	ADDRESS_NM</ITEM>
+				<ITEM>Nav.InquireTraffic	ADDRESS_NM#POI_CONSTRAINT_NM#CITY_NM#DISTRICT_NM</ITEM>
+				<ITEM>Nav.LocationPositionOnMap	ADDRESS_NM</ITEM>
+				<ITEM>Nav.MapDirection	MAP_DIRECTION_NM#MAP_MODE_NM</ITEM>
+				<ITEM>Nav.MapZoomIn	</ITEM>
+				<ITEM>Nav.MapZoomOut	</ITEM>
+				<ITEM>Nav.QuitNavigation	</ITEM>
+				<ITEM>Nav.RealtimeTrafficReminder.Off	</ITEM>
+				<ITEM>Nav.RealtimeTrafficReminder.On	</ITEM>
+				<ITEM>Nav.RouteGuidance.Off	</ITEM>
+				<ITEM>Nav.RouteGuidance.On	</ITEM>
+				<ITEM>Nav.SearchRestaurant	RESTAURANT_NM#ADDRESS_NM#POI_CONSTRAINT_NM</ITEM>
+				<ITEM>Nav.SetDestination	</ITEM>
+				<ITEM>Nav.SetDestinationByAddress	ADDRESS_NM#GUIDENCE_MODE_NM#AVOID_MODE_NM</ITEM>
+				<ITEM>Nav.SetDestinationByHomeAddress	</ITEM>
+				<ITEM>Nav.SetDestinationByOfficeAddress	</ITEM>
+				<ITEM>Nav.SetDestinationByPOICategory	POI_CATEGORY_NM#ADDRESS_NM#POI_CONSTRAINT_NM#FROM_PRICE_NR#TO_PRICE_NR</ITEM>
+				<ITEM>Nav.ShowMap.Off	</ITEM>
+				<ITEM>Nav.ShowMap.On	</ITEM>
+				<ITEM>Phone.BCALL	</ITEM>
+				<ITEM>Phone.CallBackAnswered</ITEM>
+				<ITEM>Phone.CallBackMissed</ITEM>
+				<ITEM>Phone.DialByContact	CONTACT_NM#CONTACT_RELATION_NM#PHONE_TYPE_NM#PHONEPREFIX_NR#PHONESUFFIX_NR#PHONE_YELLOWPAGE_NM</ITEM>
+				<ITEM>Phone.DialNumber	PHONE_NR</ITEM>
+				<ITEM>Phone.ICALL	</ITEM>
+				<ITEM>Phone.IncomingCallHandle.HangUp</ITEM>
+				<ITEM>Phone.IncomingCallHandle.PickUp</ITEM>
+				<ITEM>Phone.RecentCalls	PHONE_HISTORY_NM</ITEM>
+				<ITEM>Radio.CancelChannelCollect</ITEM>
+				<ITEM>Radio.CollectChannel</ITEM>
+				<ITEM>Radio.NextStation	</ITEM>
+				<ITEM>Radio.Pause</ITEM>
+				<ITEM>Radio.PlayFavourites</ITEM>
+				<ITEM>Radio.PreviousStation	</ITEM>
+				<ITEM>Radio.RefreshChannel</ITEM>
+				<ITEM>Radio.Resume</ITEM>
+				<ITEM>Radio.Save</ITEM>
+				<ITEM>Radio.SetRadioStationbyFrequencyAM	AM_FREQ_NR</ITEM>
+				<ITEM>Radio.SetRadioStationbyFrequencyFM	FM_FREQ_NR</ITEM>
+				<ITEM>Radio.SetRadioStationbyGenre	RADIO_GENRE_NM</ITEM>
+				<ITEM>Radio.SetRadioStationbyName	RADIO_STATION_NM</ITEM>
+				<ITEM>Radio.TurnOff	</ITEM>
+				<ITEM>Radio.TurnOn	</ITEM>
+				<ITEM>Sanbo.DialCall	CONTACT_NM</ITEM>
+				<ITEM>Sanbo.SendTextMessage	CONTACT_NM#MSG_BODY_NM</ITEM>
+				<ITEM>Sanbo.SendVoice	CONTACT_NM</ITEM>
+				<ITEM>Sanbo.SwitchTable	SANBU_MENU_NM</ITEM>
+				<ITEM>Weather.InquireWeather	GENERAL_TIME_NM#CITY_NM#WEATHER_CONDITION_NM#GENERAL_TIME_NM#CITY_NM</ITEM>
+				<ITEM>Car.OutOfAction.Fragrance.On	</ITEM>
+				<ITEM>Car.OutOfAction.Fragrance.Off	</ITEM>
+				<ITEM>Car.OutOfAction.WindowSunroof.On	WINDOW_LOCATION_NM#WINDOW_STATUS_NM</ITEM>
+				<ITEM>Car.OutOfAction.WindowSunroof.Off	WINDOW_LOCATION_NM#WINDOW_STATUS_NM</ITEM>
+				<ITEM>App.VideoRecordPause</ITEM>
+				<ITEM>App.VideoRecordStart</ITEM>
+				<ITEM>App.SoundRecordStart</ITEM>
+				<ITEM>App.SoundRecordStop</ITEM>
+			</INTENTS-NAME>
+		</TOPIC>
+	</CREOLE>
+</CREOLE-DIRECTORY>

@@ -1,0 +1,57 @@
+﻿auto_main	news:def	所|<unk> 有|<unk> 新|<newsphrase> 闻|<newsphrase>
+auto_main	news:def	播|<voice> 放|<voice> fm|<provider> 新|<newsphrase> 闻|<newsphrase>
+auto_main	news:def	能|<unk> 请|<unk> 你|<unk> 给|<unk> 我|<unk> 读|<voice> 新|<newsphrase> 闻|<newsphrase> 吗|<unk>
+auto_main	news:def	给|<unk> 我|<unk> 读|<voice> 下|<which> 一|<which> 篇|<which> 新|<newsphrase> 闻|<newsphrase> 文|<newsphrase> 章|<newsphrase>
+auto_main	news:def	给|<unk> 我|<unk> 看|<unk> 下|<which> 一|<which> 篇|<which> 新|<newsphrase> 闻|<newsphrase> 文|<newsphrase> 章|<newsphrase>
+auto_main	news:def	你|<unk> 能|<unk> 给|<unk> 我|<unk> 读|<voice> 一|<unk> 些|<unk> 关|<unk> 于|<unk> 在|<topic> 斯|<topic> 图|<topic> 加|<topic> 特|<topic> 的|<topic> 行|<topic> 李|<topic> 箱|<topic> 里|<topic> 发|<topic> 现|<topic> 的|<topic> 尸|<topic> 体|<topic> 吗|<unk> ？
+auto_main	noteself:memo	添|<unk> 加|<unk> 备|<unk> 忘|<unk> 录|<unk>
+auto_main	noteself:memo	写|<unk> 一|<unk> 份|<unk> 备|<unk> 忘|<unk> 录|<unk> 买|<text> 牛|<text> 奶|<text>
+auto_main	radio:off	关|<unk> 掉|<unk> 收|<unk> 音|<unk> 机|<unk>
+auto_main	radio:play  播|<unk> 放|<unk> 电|<unk> 台|<unk>
+auto_main	setting_control:open	打|<unk> 开|<unk> 驾|<seat_position> 驶|<seat_position> 座|<setting> 加|<setting> 热|<setting>
+auto_main	sms:forward 通|<unk> 过|<unk> 微|<provider> 信|<provider> 将|<unk> 这|<objectanaph> 张|<objectanaph> 照|<objectanaph> 片|<objectanaph> 发|<unk> 送|<unk> 给|<unk> 乔|<contact>
+auto_main	sms:forward	通|<unk> 过|<unk> 微|<provider> 信|<provider> 将|<unk> 文|<unk> 字|<unk> 转|<unk> 发|<unk> 给|<unk> 乔|<contact>
+auto_main	sms:forward	将|<unk> 文|<unk> 字|<unk> 转|<unk> 发|<unk> 给|<unk> 母|<contact_relation> 亲|<contact_relation>
+auto_main	sms:forward	通|<unk> 过|<unk> 微|<provider> 信|<provider> 将|<unk> 这|<objectanaph> 张|<objectanaph> 照|<objectanaph> 片|<objectanaph> 转|<unk> 发|<unk> 给|<unk> 我|<contact_relation> 母|<contact_relation> 亲|<contact_relation>
+auto_main	sms:forward	将|<unk> 文|<unk> 字|<unk> 转|<unk> 发|<unk> 给|<unk> 我|<contact_relation> 父|<contact_relation> 亲|<contact_relation> 在|<unk> 五|<pn> 九|<pn> 六|<pn> 零|<pn>
+auto_main	sms:forward	通|<unk> 过|<unk> 微|<provider> 信|<provider> 将|<unk> 文|<unk> 本|<unk> 转|<unk> 发|<unk> 给|<unk> 妈|<contact_relation> 妈|<contact_relation>
+auto_main	sms:forward	把|<unk> 文|<unk> 字|<unk> 转|<unk> 发|<unk> 给|<unk> 爸|<contact_relation> 爸|<contact_relation> 的|<unk> 工|<type> 作|<type> 电|<unk> 话|<unk>
+auto_main	social:post:content	我|<unk> 需|<unk> 要|<unk> 发|<unk> 布|<unk> 一|<unk> 个|<unk> 新|<unk> 的|<unk> 状|<unk> 态|<unk>
+auto_main	social:post:content	发|<unk> 布|<unk> 此|<objectanaph> 视|<objectanaph> 频|<objectanaph>
+auto_main	social:post:content	在|<unk> Facebook|<service> 上|<unk> 发|<unk> 布|<unk> 此|<objectanaph> 视|<objectanaph> 频|<objectanaph>
+auto_main	social:post:content	在|<unk> facebook|<service> 上|<unk> 发|<unk> 布|<unk> 新|<unk> 状|<unk> 态|<unk>
+auto_main	social:post:content	发|<unk> 布|<unk> 新|<unk> 的|<unk> 状|<unk> 态|<unk> 祝|<status> 我|<status> 好|<status> 运|<status>
+auto_main	stock:def	搜|<unk> 索|<unk> 股|<unk> 票|<unk>
+auto_main	stock:def	查|<unk> 找|<unk> 谷|<business> 歌|<business> 股|<unk> 票|<unk>
+auto_main	stock:def	nuance|<business>  的|<unk> 股|<unk> 票|<unk> 今|<date> 天|<date> 怎|<unk> 么|<unk> 样|<unk>
+auto_main	stock:def	谷|<business> 歌|<business> 股|<unk> 票|<unk> 今|<date> 天|<date> 在|<unk> 纽|<exchange> 约|<exchange> 证|<exchange> 券|<exchange> 交|<exchange> 易|<exchange> 所|<exchange> 如|<unk> 何|<unk>
+auto_main	stock:def	nuance|<business> 股|<unk> 票|<unk> 在|<unk> 伦|<exchange> 敦|<exchange> 证|<exchange> 券|<exchange> 交|<exchange> 易|<exchange> 所|<exchange> 如|<unk> 何|<unk>
+auto_main	stock:def	从|<unk> 昨|<date> 天|<date> 开|<unk> 始|<unk> 搜|<unk> 索|<unk> 股|<unk> 票|<unk>
+auto_main	stock:def	向|<unk> 我|<unk> 展|<unk> 示|<unk> 纽|<exchange> 约|<exchange> 证|<exchange> 券|<exchange> 交|<exchange> 易|<exchange> 所|<exchange> 今|<date> 天|<date> 的|<unk> 股|<unk> 票|<unk>
+auto_main	stock:def	搜|<unk> 索|<unk> 伦|<exchange> 敦|<exchange> 证|<exchange> 券|<exchange> 交|<exchange> 易|<exchange> 所|<exchange> 今|<date> 日|<date> 纳|<index> 斯|<index> 达|<index> 克|<index> 指|<index> 数|<index>
+auto_main	stock:def	搜|<unk> 索|<unk> 伦|<exchange> 敦|<exchange> 证|<exchange> 券|<exchange> 交|<exchange> 易|<exchange> 所|<exchange> 今|<date> 天|<date> 的|<unk> 纳|<index> 斯|<index> 达|<index> 克|<index> 指|<index> 数|<index> 最|<query> 高|<query> 价|<query>
+auto_main	stock:def	搜|<unk> 索|<unk> 昨|<date> 天|<date> 纳|<index> 斯|<index> 达|<index> 克|<index> 指|<index> 数|<index>
+auto_main	stock:def	给|<unk> 我|<unk> 展|<unk> 示|<unk> 纽|<exchange> 约|<exchange> 证|<exchange> 券|<exchange> 交|<exchange> 易|<exchange> 所|<exchange> 的|<unk> 股|<unk> 票|<unk>
+auto_main	stock:def	搜|<unk> 索|<unk> 纳|<index> 斯|<index> 达|<index> 克|<index> 指|<index> 数|<index>
+auto_main	task:add	当|<reminder_temporal_reference> 我|<reminder_temporal_reference> 到|<reminder_temporal_reference> 达|<reminder_temporal_reference> 时|<reminder_temporal_reference> 添|<unk> 加|<unk> 明|<reminderdate> 天|<reminderdate> 提|<unk> 醒|<unk> 清|<title> 洁|<title> 烤|<title> 箱|<title> 任|<unk> 务|<unk>
+auto_main	task:add	明|<reminderdate> 天|<reminderdate> 下|<remindertime> 午|<remindertime> 一|<remindertime> 点|<remindertime> 添|<unk> 加|<unk> 一|<unk> 个|<unk> 带|<unk> 有|<unk> 提|<unk> 醒|<unk> 的|<unk> 新|<unk> 任|<unk> 务|<unk>
+auto_main	task:add	明|<reminderdate> 天|<reminderdate> 下|<remindertime> 午|<remindertime> 一|<remindertime> 点|<remindertime> 添|<unk> 加|<unk> 一|<unk> 个|<unk> 打|<title> 扫|<title> 房|<title> 子|<title> 的|<unk> 新|<unk> 任|<unk> 务|<unk>
+auto_main	task:add	在|<remindertime> 下|<remindertime> 午|<remindertime> 一|<remindertime> 点|<remindertime> 添|<unk> 加|<unk> 一|<unk> 个|<unk> 打|<unk> 扫|<unk> 房|<title> 子|<title> 新|<unk> 任|<unk> 务|<unk> 提|<unk> 醒|<unk>
+auto_main	thirdparty:admin	武|<unk> 汉|<unk> 属|<unk> 于|<unk> 哪|<unk> 个|<unk> 省|<unk>
+auto_main	thirdparty:calculate	计|<unk> 算|<unk> 四|<unk> 加|<unk> 五|<unk>
+auto_main	thirdparty:contact	北|<unk> 京|<unk> 的|<unk> 区|<unk> 号|<unk> 是|<unk> 多|<unk> 少|<unk>
+auto_main	thirdparty:def	介|<unk> 绍|<unk> 歌|<unk> 曲|<unk> 王|<unk> 朝|<unk>
+auto_main	thirdparty:lottery	超|<unk> 级|<unk> 乐|<unk> 透|<unk> 彩|<unk> 票|<unk> 结|<unk> 果|<unk>
+auto_main	thirdparty:translate	蒲|<unk> 公|<unk> 英|<unk> 用|<unk> 英|<unk> 语|<unk> 怎|<unk> 么|<unk> 说|<unk>
+auto_main	trafficviolation:inquiry	我|<unk> 有|<unk> 未|<unk> 支|<unk> 付|<unk> 的|<unk> 交|<unk> 通|<unk> 违|<unk> 规|<unk> 罚|<unk> 单|<unk> 吗|<unk>
+auto_main	trafficviolation:inquiry	检|<unk> 查|<unk> 我|<unk> 是|<unk> 否|<unk> 在|<unk> 三|<date> 月|<date> 二|<date> 十|<date> 日|<date> 有|<unk> 任|<unk> 何|<unk> 交|<unk> 通|<unk> 违|<unk> 规|<unk> 行|<unk> 为|<unk>
+auto_main	wcis:def	我|<unk> 怎|<unk> 么|<unk> 说|<unk> 才|<unk> 能|<unk> 写|<unk> 信|<unk> 息|<unk>
+auto_main	weather:lookup	给|<unk> 我|<unk> 天|<unk> 气|<unk>
+auto_main	weather:lookup	去|<unk> 明|<date> 天|<date> 下|<time> 午|<time> 布|<loc> 鲁|<loc> 克|<loc> 林|<loc> 的|<unk> 天|<unk> 气|<unk>
+auto_main	weather:lookup	我|<unk> 想|<unk> 要|<unk> 为|<unk> 我|<unk> 的|<unk> 目|<locref> 的|<locref> 地|<locref> 提|<unk> 供|<unk> 五|<date> 天|<date> 的|<unk> 天|<unk> 气|<unk> 概|<unk> 况|<unk>
+auto_main	weather:lookup	请|<unk> 告|<unk> 诉|<unk> 我|<unk> 星|<date> 期|<date> 五|<date> 晚|<time> 上|<time> 对|<unk> 该|<unk> 地|<locref> 区|<locref> 的|<unk> 天|<unk> 气|<unk> 预|<unk> 报|<unk>
+auto_main	weather:lookup	转|<unk> 到|<unk> 七|<date> 月|<date> 九|<date> 日|<date> 晚|<time> 的|<unk> 天|<unk> 气|<unk> 预|<unk> 报|<unk>
+auto_main	weather:lookup	从|<date> 现|<time> 在|<time> 起|<date> 两|<date> 天|<date> 后|<date> 会|<unk> 不|<unk> 会|<unk> 结|<weatheract> 冰|<weatheract>
+auto_main	weather:lookup	北|<loc> 京|<loc> 的|<unk> 最|<query_modifier> 高|<query_modifier> 气|<weatheract> 温|<weatheract> 和|<unk> 最|<query_modifier#1> 低|<query_modifier#1> 气|<weatheract#1> 温|<weatheract#1> 是|<unk> 多|<unk> 少|<unk>
+auto_main	weather:lookup	你|<unk> 能|<unk> 告|<unk> 诉|<unk> 我|<unk> 迈|<loc> 尔|<loc> 斯|<loc> 堡|<loc> 目|<time> 前|<time> 的|<unk> 天|<unk> 气|<unk> 吗|<unk>
+auto_main	weather:lookup	最|<query_modifier> 高|<query_modifier> 温|<weatheract> 度|<weatheract> 和|<unk> 最|<query_modifier#1> 低|<query_modifier#1> 温|<weatheract#1> 度|<weatheract#1> 是|<unk> 多|<unk> 少|<unk>

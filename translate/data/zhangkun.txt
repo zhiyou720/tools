@@ -1,0 +1,57 @@
+auto_main	news:def	all|<unk> news|<newsphrase> please|<unk>
+auto_main	news:def	play|<voice> fm|<provider> news|<newsphrase>
+auto_main	news:def	can|<unk> you|<unk> please|<unk> read|<voice> the|<unk> news|<newsphrase> to|<unk> me|<unk>
+auto_main	news:def	read|<voice> me|<unk> next|<which> news|<newsphrase> article|<newsphrase>
+auto_main	news:def	show|<unk> me|<unk> next|<which> news|<newsphrase> article|<newsphrase>
+auto_main	news:def	can|<unk> you|<unk> read|<voice> me|<unk> something|<unk> about|<unk> the|<topic> corpse|<topic> found|<topic> in|<topic> a|<topic> suitcase|<topic> in|<topic> stuttgart|<topic>
+auto_main	noteself:memo	add|<unk> a|<unk> memo|<unk>
+auto_main	noteself:memo	write|<unk> a|<unk> memo|<unk> buy|<text> milk|<text>
+auto_main	radio:off	switch|<unk> radio|<unk> off|<unk>
+auto_main	radio:play	play|<unk> radio|<unk>
+auto_main	setting_control:open	turn|<unk> on|<unk> driver|<seat_position> seat|<setting> heating|<setting>
+auto_main	sms:forward	forward|<unk> this|<objectanaph> picture|<objectanaph> to|<unk> joe|<contact> through|<unk> wechat|<provider>
+auto_main	sms:forward	forward|<unk> a|<unk> text|<unk> to|<unk> joe|<contact> through|<unk> wechat|<provider>
+auto_main	sms:forward	forward|<unk> a|<unk> text|<unk> to|<unk> mother|<contact_relation>
+auto_main	sms:forward	forward|<unk> this|<objectanaph> picture|<objectanaph> to|<unk> my|<contact_relation> mother|<contact_relation> through|<unk> wechat|<provider>
+auto_main	sms:forward	forward|<unk> text|<unk> to|<unk> my|<contact_relation> father|<contact_relation> on|<unk> five|<pn> nine|<pn> six|<pn> zero|<pn>
+auto_main	sms:forward	forward|<unk> a|<unk> text|<unk> to|<unk> mum|<contact_relation> through|<unk> wechat|<provider>
+auto_main	sms:forward	forward|<unk> a|<unk> text|<unk> to|<unk> dad|<contact_relation> 's|<unk> work|<type> phone|<unk>
+auto_main	social:post:content	i|<unk> need|<unk> to|<unk> post|<unk> a|<unk> new|<unk> status|<unk>
+auto_main	social:post:content	post|<unk> this|<objectanaph> video|<objectanaph>
+auto_main	social:post:content	post|<unk> this|<objectanaph> video|<objectanaph> on|<unk> facebook|<service>
+auto_main	social:post:content	post|<unk> a|<unk> new|<unk> status|<unk> on|<unk> facebook|<service>
+auto_main	social:post:content	post|<unk> a|<unk> new|<unk> status|<unk> wish|<status> me|<status> luck|<status>
+auto_main	stock:def	search|<unk> stock|<unk>
+auto_main	stock:def	lookup|<unk> google|<business> stock|<unk>
+auto_main	stock:def	how|<unk> is|<unk> nuance|<business> stock|<unk> doing|<unk> today|<date>
+auto_main	stock:def	how|<unk> is|<unk> google|<business> doing|<unk> today|<date> on|<unk> the|<unk> new|<exchange> york|<exchange> stock|<exchange> exchange|<exchange>
+auto_main	stock:def	how|<unk> is|<unk> nuance|<business> stock|<unk> doing|<unk> on|<unk> the|<unk> london|<exchange> stock|<exchange> exchange|<exchange>
+auto_main	stock:def	search|<unk> stock|<unk> from|<unk> yesterday|<date>
+auto_main	stock:def	show|<unk> me|<unk> the|<unk> stock|<unk> on|<unk> the|<unk> new|<exchange> york|<exchange> stock|<exchange> exchange|<exchange> today|<date>
+auto_main	stock:def	search|<unk> the|<unk> nasdaq|<index> index|<index> on|<unk> the|<unk> london|<exchange> stock|<exchange> exchange|<exchange> today|<date>
+auto_main	stock:def	search|<unk> the|<unk> nasdaq|<index> index|<index> highest|<query> price|<query> on|<unk> the|<unk> london|<exchange> stock|<exchange> exchange|<exchange> today|<date>
+auto_main	stock:def	search|<unk> the|<unk> nasdaq|<index> index|<index> yesterday|<date>
+auto_main	stock:def	show|<unk> me|<unk> the|<unk> stock|<unk> on|<unk> the|<unk> new|<exchange> york|<exchange> stock|<exchange> exchange|<exchange>
+auto_main	stock:def	search|<unk> the|<unk> nasdaq|<index> index|<index>
+auto_main	task:add	add|<unk> the|<unk> task|<unk> clean|<title> oven|<title> with|<unk> reminder|<unk> tomorrow|<reminderdate> when|<reminder_temporal_reference> i|<reminder_temporal_reference> arrive|<reminder_temporal_reference>
+auto_main	task:add	add|<unk> a|<unk> new|<unk> task|<unk> with|<unk> reminder|<unk> tomorrow|<reminderdate> at|<remindertime> one|<remindertime> pm|<remindertime>
+auto_main	task:add	add|<unk> a|<unk> new|<unk> task|<unk> clean|<title> house|<title> with|<unk> reminder|<unk> tomorrow|<reminderdate> at|<remindertime> one|<remindertime> pm|<remindertime>
+auto_main	task:add	add|<unk> a|<unk> new|<unk> task|<unk> clean|<title> house|<title> with|<unk> reminder|<unk> at|<unk> one|<remindertime> pm|<remindertime>
+auto_main	thirdparty:admin	which|<unk> province|<unk> does|<unk> wuhan|<unk> belong|<unk> to|<unk>
+auto_main	thirdparty:calculate	calculate|<unk> four|<unk> plus|<unk> five|<unk>
+auto_main	thirdparty:contact	what|<unk> is|<unk> the|<unk> area|<unk> code|<unk> for|<unk> beijing|<unk>
+auto_main	thirdparty:def	introduce|<unk> the|<unk> song|<unk> dynasty|<unk>
+auto_main	thirdparty:lottery	super|<unk> lotto|<unk> lottery|<unk> results|<unk>
+auto_main	thirdparty:translate	what|<unk> does|<unk> the|<unk> dandelion|<unk> say|<unk> in|<unk> english|<unk>
+auto_main	trafficviolation:inquiry	do|<unk> i|<unk> have|<unk> unpaid|<unk> traffic|<unk> violation|<unk> tickets|<unk>
+auto_main	trafficviolation:inquiry	check|<unk> if|<unk> i|<unk> have|<unk> any|<unk> traffic|<unk> violation|<unk> on|<unk> march|<date> twenty|<date> first|<date>
+auto_main	wcis:def	what|<unk> can|<unk> i|<unk> say|<unk> to|<unk> write|<unk> a|<unk> message|<unk>
+auto_main	weather:lookup	give|<unk> me|<unk> weather|<unk>
+auto_main	weather:lookup	go|<unk> to|<unk> tomorrow|<date> afternoon|<time> 's|<unk> weather|<unk> for|<unk> brooklyn|<loc>
+auto_main	weather:lookup	i'd|<unk> like|<unk> a|<unk> five|<date> day|<date> overview|<unk> of|<unk> the|<unk> weather|<unk> for|<unk> my|<locref> destination|<locref>
+auto_main	weather:lookup	please|<unk> show|<unk> me|<unk> friday|<date> evening|<time> 's|<unk> weather|<unk> forecast|<unk> for|<unk> the|<unk> region|<locref>
+auto_main	weather:lookup	go|<unk> to|<unk> the|<unk> weather|<unk> forecast|<unk> for|<unk> the|<unk> evening|<time> of|<unk> july|<date> ninth|<date>
+auto_main	weather:lookup	will|<unk> it|<unk> be|<unk> icy|<weatheract> two|<date> days|<date> from|<date> now|<time>
+auto_main	weather:lookup	what|<unk> is|<unk> the|<unk> highest|<query_modifier> temperature|<weatheract> and|<unk> the|<unk> lowest|<query_modifier#1> temperature|<weatheract#1> in|<unk> beijing|<loc>
+auto_main	weather:lookup	can|<unk> you|<unk> show|<unk> me|<unk> the|<unk> current|<time> weather|<unk> for|<unk> fort|<loc> myers|<loc> please|<unk>
+auto_main	weather:lookup	what|<unk> is|<unk> the|<unk> highest|<query_modifier> temperature|<weatheract> and|<unk> the|<unk> lowest|<query_modifier#1> temperature|<weatheract#1>

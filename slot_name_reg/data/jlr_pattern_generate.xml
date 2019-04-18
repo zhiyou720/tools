@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: slot_train_config.xml,v 1.0 2016.04.13 qiuchunfeng Exp $ --><!-- slot_train_config.xml directory file for slot extraction training resources -->
+<CREOLE-DIRECTORY>
+	<CREOLE>
+		<TOPIC>
+			<PARAMETER NAME="corpus_path" DEFAULT="..\corpus_cac\corpus" COMMENT="the directory file path for training corpus">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="dict_path" DEFAULT=".\SLOT_DB" COMMENT="the directory file path for training corpus">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="pattern_path" DEFAULT="..\corpus_cac\pattern" COMMENT="the directory file path for training corpus">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="testSet_path" DEFAULT="..\corpus_cac\test" COMMENT="the directory file path for test corpus">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="logfile_path" DEFAULT="..\corpus_cac\log" COMMENT="the directory file path for test corpus">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="pattern_parent_path" DEFAULT="..\corpus_cac\" COMMENT="the directory file path for pattern files">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="tagged_corpus_path" DEFAULT="..\tmp\JLR_CAC\" COMMENT="the directory file path for tagged corpus">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="slotTrainingConfigfile_name" DEFAULT="slot_train_config_cac.xml" COMMENT="the configure file name for slot model training">
+				string
+			</PARAMETER>
+			<PARAMETER NAME="reuse_slot_in_corpus" DEFAULT="false" COMMENT="the configure file name for slot model training">
+				string
+			</PARAMETER>
+			<INTENTS-NAME>
+				<ITEM>Media.Help	MEDIA_TYPE_NM</ITEM>
+				<ITEM>Media.HelpMyDevice	MY_DEVICE_NM</ITEM>
+				<ITEM>Media.Plays	DEVICE_NM#ALBUM_NM#ALBUM_KW#ARTIST_KW#GENRE_NM#GENRE_KW#ARTIST_NM#SONG_NM#SONG_KW</ITEM>
+				<ITEM>Media.PlayPlaylist	DEVICE_NM#PLAYLIST_NM#</ITEM>
+				<ITEM>Media.Play	MEDIA_TYPE_NM</ITEM>
+				<ITEM>Media.PlayMyDevice	MY_DEVICE_NM</ITEM>
+				<ITEM>Media.PlaySimilar	</ITEM>
+				<ITEM>Media.Repeat	</ITEM>
+				<ITEM>Media.RepeatOff	</ITEM>
+				<ITEM>Media.RepeatSongs	</ITEM>
+				<ITEM>Media.Select	MEDIA_TYPE_NM</ITEM>
+				<ITEM>Media.SelectMyDevice	MY_DEVICE_NM</ITEM>
+				<ITEM>Media.SelectMood	</ITEM>
+				<ITEM>Media.ShowCommands	MEDIA_TYPE_NM</ITEM>
+				<ITEM>Media.ShowCommandsMyDevice	MY_DEVICE_NM</ITEM>
+				<ITEM>Media.Shuffle	</ITEM>
+				<ITEM>Media.ShuffleOff	</ITEM>
+				<ITEM>Media.ShuffleSongs	</ITEM>
+				<ITEM>Navi.CancelRoute	</ITEM>
+				<ITEM>Navi.Help	</ITEM>
+				<ITEM>Navi.Select	</ITEM>
+				<ITEM>Navi.SetCountry	</ITEM>
+				<ITEM>Navi.ChangeState	PROVINCE_NM#CITY_NM</ITEM>
+				<ITEM>Navi.SetToHomeLocation	ADDRESS_KW</ITEM>
+				<ITEM>Navi.SetToAddresses	ADDRESS_KW#ADDRESS_NM</ITEM>
+				<ITEM>Navi.SetToPOIs	ADDRESS_KW</ITEM>
+				<ITEM>Navi.SetToPOI	POI_CONSTRAINT_NM#POI_CATEGORY_NM#ADDRESS_KW#</ITEM>
+				<ITEM>Navi.SetWaypointCategory	POI_CONSTRAINT_NM#POI_CATEGORY_NM</ITEM>
+				<ITEM>Navi.SetToPhoneNrs	ADDRESS_KW#PHONE_NR</ITEM>
+				<ITEM>Navi.SetWaypointPhoneNrs	PHONE_NR</ITEM>
+				<ITEM>Navi.WaypointToPreviousDestination	ADDRESS_KW</ITEM>
+				<ITEM>Navi.DestinationToPreviousDestination	ADDRESS_KW</ITEM>
+				<ITEM>Navi.SetToPreviousDestination	ADDRESS_KW</ITEM>
+				<ITEM>Navi.SetWaypointPOIs	</ITEM>
+				<ITEM>Navi.SetWaypoint	ADDRESS_NM#ADDRESS_KW</ITEM>
+				<ITEM>Navi.SetWaypointToHome	</ITEM>
+				<ITEM>Navi.ShowCommands	</ITEM>
+				<ITEM>Phn.AcceptCalls	</ITEM>
+				<ITEM>Phn.CallName	#CONTACT_NM#PHONETYPE_NM#</ITEM>
+				<ITEM>Phn.CallNr	PHONE_NR</ITEM>
+				<ITEM>Phn.ChangeDevice	</ITEM>
+				<ITEM>Phn.DeleteVoicetag	ALL_KW#PHONE_VOICETAG_NM</ITEM>
+				<ITEM>Phn.Dial	</ITEM>
+				<ITEM>Phn.DialCallList	</ITEM>
+				<ITEM>Phn.DialLastAnsweredCall	</ITEM>
+				<ITEM>Phn.DialLastMissedCall	</ITEM>
+				<ITEM>Phn.DialVoicemail	</ITEM>
+				<ITEM>Phn.DialVoicetag	PHONE_VOICETAG_NM</ITEM>
+				<ITEM>Phn.EditVoicetag	PHONE_VOICETAG_NM</ITEM>
+				<ITEM>Phn.Help	</ITEM>
+				<ITEM>Phn.ReadVoicetags	</ITEM>
+				<ITEM>Phn.Redial	</ITEM>
+				<ITEM>Phn.RejectCalls	</ITEM>
+				<ITEM>Phn.Select	</ITEM>
+				<ITEM>Phn.ShowCommands	</ITEM>
+				<ITEM>Phn.StoreVoicetags	</ITEM>
+				<ITEM>SMS.Forward	</ITEM>
+				<ITEM>SMS.Help	</ITEM>
+				<ITEM>SMS.Read	</ITEM>
+				<ITEM>SMS.AddRecipient	</ITEM>
+				<ITEM>SMS.ReadPrev	</ITEM>
+				<ITEM>SMS.Reply	</ITEM>
+				<ITEM>SMS.ReplyPrev	</ITEM>
+				<ITEM>SMS.SelectTemplate	</ITEM>
+				<ITEM>SMS.Resume	</ITEM>
+				<ITEM>SMS.Write	CONTACT_NM#PHONE_NR#PHONE_VOICETAG_NM</ITEM>
+				<ITEM>Sys.ConfirmationOff	</ITEM>
+				<ITEM>Sys.ConfirmationOn	</ITEM>
+				<ITEM>Sys.ConnectPhone	</ITEM>
+				<ITEM>Sys.DeleteNotepad	</ITEM>
+				<ITEM>Sys.FeedbackOff	</ITEM>
+				<ITEM>Sys.FeedbackOn	</ITEM>
+				<ITEM>Sys.HeadphonesOff	</ITEM>
+				<ITEM>Sys.HeadphonesOn	</ITEM>
+				<ITEM>Sys.HelpNotepad	</ITEM>
+				<ITEM>Sys.Pause	</ITEM>
+				<ITEM>Sys.PlayNotepad	</ITEM>
+				<ITEM>Sys.Resume	</ITEM>
+				<ITEM>Sys.RSEOff	</ITEM>
+				<ITEM>Sys.RSEResume	</ITEM>
+				<ITEM>Sys.ShowCommands	</ITEM>
+				<ITEM>Sys.ShowDownApp	APP_NM</ITEM>
+				<ITEM>Sys.Stop	</ITEM>
+				<ITEM>Sys.StoreNotepad	</ITEM>
+				<ITEM>Sys.Tutorial	</ITEM>
+				<ITEM>Tuner.DeleteVoicetagRadio	TUNER_RADIO_VOICETAG_NM#ALL_KW</ITEM>
+				<ITEM>Tuner.DeleteVoicetagTV	TUNER_TV_VOICETAG_NM#ALL_KW</ITEM>
+				<ITEM>Tuner.EditVoicetagRadio	TUNER_RADIO_VOICETAG_NM</ITEM>
+				<ITEM>Tuner.EditVoicetagTV	TUNER_TV_VOICETAG_NM#</ITEM>
+				<ITEM>Tuner.GoLive	</ITEM>
+				<ITEM>Tuner.HelpRadio	TUNER_TYPE_NM</ITEM>
+				<ITEM>Tuner.HelpTV	</ITEM>
+				<ITEM>Tuner.NewsOff	</ITEM>
+				<ITEM>Tuner.NewsOn	</ITEM>
+				<ITEM>Tuner.Play	TUNER_TYPE_NM</ITEM>
+				<ITEM>Tuner.PlayTV	</ITEM>
+				<ITEM>Tuner.ReadVoicetagsRadio	</ITEM>
+				<ITEM>Tuner.ReadVoicetagsTV	</ITEM>
+				<ITEM>Tuner.SDARSAddArtist	</ITEM>
+				<ITEM>Tuner.SDARSAddSong	</ITEM>
+				<ITEM>Tuner.SDARSAddTeam	</ITEM>
+				<ITEM>Tuner.SDARSScanOff	</ITEM>
+				<ITEM>Tuner.SDARSScanOn	</ITEM>
+				<ITEM>Tuner.SDARSTrafficJumpOff	</ITEM>
+				<ITEM>Tuner.SDARSTrafficJumpOn	</ITEM>
+				<ITEM>Tuner.SelectCategoryAM	TUNER_CATEGORY_NM</ITEM>
+				<ITEM>Tuner.SelectCategoryDAB	TUNER_CATEGORY_NM</ITEM>
+				<ITEM>Tuner.SelectCategoryDRM	TUNER_CATEGORY_NM</ITEM>
+				<ITEM>Tuner.SelectCategory	TUNER_CATEGORY_NM</ITEM>
+				<ITEM>Tuner.SelectCategoryFM	TUNER_CATEGORY_NM</ITEM>
+				<ITEM>Tuner.SelectCategorySDARS	TUNER_CATEGORY_NM</ITEM>
+				<ITEM>Tuner.SelectFreqs	FREQUENCY_AM_NR#FREQUENCY_FM_NR</ITEM>
+				<ITEM>Tuner.SelectHDSubchannel	HD_SUBCHANNEL_NR</ITEM>
+				<ITEM>Tuner.SelectRadio	TUNER_TYPE_NM</ITEM>
+				<ITEM>Tuner.SelectSDARSChannel	SDARS_CHANNEL_NR</ITEM>
+				<ITEM>Tuner.SelectStation	STATION_AM_NM#STATION_DAB_NM#STATION_DRM_NM#STATION_FM_NM#STATION_SDARS_NM#STATION_TV_NM#</ITEM>
+				<ITEM>Tuner.SelectStationAM	STATION_AM_NM</ITEM>
+				<ITEM>Tuner.SelectStationDAB	STATION_DAB_NM</ITEM>
+				<ITEM>Tuner.SelectStationDRM	STATION_DRM_NM</ITEM>
+				<ITEM>Tuner.SelectStationFM	STATION_FM_NM</ITEM>
+				<ITEM>Tuner.SelectStationSDARS	STATION_SDARS_NM</ITEM>
+				<ITEM>Tuner.SelectStationTV	STATION_TV_NM</ITEM>
+				<ITEM>Tuner.SelectTV	</ITEM>
+				<ITEM>Tuner.SelectVoicetagRadio	TUNER_RADIO_VOICETAG_NM#</ITEM>
+				<ITEM>Tuner.SelectVoicetagTV	TUNER_TV_VOICETAG_NM#</ITEM>
+				<ITEM>Tuner.SelectVoicetags	</ITEM>
+				<ITEM>Tuner.ShowCommandsRadio	TUNER_TYPE_NM</ITEM>
+				<ITEM>Tuner.ShowCommandsTV	</ITEM>
+				<ITEM>Tuner.StoreVoicetagsRadio	</ITEM>
+				<ITEM>Tuner.StoreVoicetagsTV	</ITEM>
+				<ITEM>Tuner.TrafficOff	</ITEM>
+				<ITEM>Tuner.TrafficOn	</ITEM>
+			</INTENTS-NAME>
+		</TOPIC>
+	</CREOLE>
+</CREOLE-DIRECTORY>

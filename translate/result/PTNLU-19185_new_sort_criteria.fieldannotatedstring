@@ -1,0 +1,12 @@
+auto_main	auto_only:gasstation:def	根|<unk> 据|<unk> 排|<sort> 名|<sort> 显|<unk> 示|<unk> 巴|<locality> 黎|<locality> 的|<unk> 加|<gasstationphrase> 油|<gasstationphrase> 站|<gasstationphrase>
+auto_main	auto_only:gasstation:def	显|<unk> 示|<unk> 加|<gasstationphrase> 油|<gasstationphrase> 站|<gasstationphrase> 按|<unk> 评|<sort> 分|<sort> 排|<unk> 序|<unk>
+auto_main	auto_only:localsearch:def	显|<unk> 示|<unk> 马|<locality> 德|<locality> 里|<locality> 的|<unk> 餐|<cat> 厅|<cat> 根|<unk> 据|<unk> 最|<sort> 高|<sort> 质|<sort> 量|<sort> 排|<unk> 序|<unk>
+auto_main	auto_only:localsearch:def	显|<unk> 示|<unk> 从|<unk> 最|<sort> 好|<sort> 的|<unk> 餐|<cat> 厅|<cat> 开|<unk> 始|<unk> 排|<unk> 序|<unk> 的|<unk> 餐|<cat> 馆|<cat>
+auto_main	auto_only:map:def	在|<unk> 地|<unk> 图|<unk> 上|<unk> 显|<unk> 示|<unk> 给|<unk> 我|<unk> 最|<sort> 好|<sort> 评|<sort> 价|<sort> 的|<unk> 柴|<fueltype> 油|<fueltype> 加|<cat> 油|<cat> 站|<cat>
+auto_main	auto_only:map:def	显|<unk> 示|<unk> 蒙|<locality> 特|<locality> 利|<locality> 尔|<locality> 餐|<unk> 厅|<unk> 的|<unk> 地|<unk> 图|<unk> 按|<unk> 最|<sort> 佳|<sort> 星|<sort> 级|<sort> 排|<sort> 序|<sort>
+auto_main	auto_only:map:def	在|<unk> 地|<unk> 图|<unk> 上|<unk> 显|<unk> 示|<unk> 餐|<cat> 厅|<cat> 根|<sort> 据|<sort> 最|<sort> 有|<sort> 好|<sort> 的|<unk> 评|<sort> 论|<sort> 排|<unk> 序|<unk>
+auto_main	auto_only:parking:def	显|<unk> 示|<unk> 日|<locality> 内|<locality> 瓦|<locality> 的|<unk> 有|<category> 盖|<category> 停|<category> 车|<category> 场|<category> 按|<unk> 照|<unk> 分|<sort> 类|<sort> 排|<unk> 序|<unk>
+auto_main	auto_only:parking:def	显|<unk> 示|<unk> 按|<unk> 星|<sort> 级|<sort> 排|<unk> 序|<unk> 的|<unk> 残|<category> 疾|<category> 人|<category> 停|<category> 车|<category> 场|<category>
+auto_main	auto_only:ude:na	蒙|<locality> 特|<locality> 利|<locality> 尔|<locality> 的|<unk> e85|<fueltype> 燃|<fueltype> 料|<fueltype> 加|<cat> 油|<cat> 站|<cat> 根|<unk> 据|<unk> 评|<sort> 论|<sort> 排|<unk> 序|<unk>
+auto_main	auto_only:ude:na	芝|<locality> 加|<locality> 哥|<locality> 的|<unk> 餐|<cat> 厅|<cat> 按|<unk> 最|<sort> 佳|<sort> 评|<sort> 级|<sort> 排|<unk> 序|<unk>
+auto_main	auto_only:ude:na	按|<unk> 最|<sort> 高|<sort> 分|<sort> 类|<sort> 排|<unk> 序|<unk>

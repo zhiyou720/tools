@@ -1,0 +1,171 @@
+﻿auto_main	news:def	all|<unk> news|<newsphrase> please|<unk>
+auto_main	news:def	所有新闻请
+
+auto_main	news:def	play|<voice> fm|<provider> news|<newsphrase>
+auto_main	news:def	玩新闻
+
+auto_main	news:def	can|<unk> you|<unk> please|<unk> read|<voice> the|<unk> news|<newsphrase> to|<unk> me|<unk>
+auto_main	news:def	能告诉我这个消息吗？
+
+auto_main	news:def	read|<voice> me|<unk> next|<which> news|<newsphrase> article|<newsphrase>
+auto_main	news:def	读下一篇新闻文章
+
+auto_main	news:def	show|<unk> me|<unk> next|<which> news|<newsphrase> article|<newsphrase>
+auto_main	news:def	给我看下一篇新闻文章
+
+auto_main	news:def	can|<unk> you|<unk> read|<voice> me|<unk> something|<unk> about|<unk> the|<topic> corpse|<topic> found|<topic> in|<topic> a|<topic> suitcase|<topic> in|<topic> stuttgart|<topic>
+auto_main	news:def	你能读一些关于在斯图加特的行李箱里发现的尸体吗？
+
+auto_main	noteself:memo	add|<unk> a|<unk> memo|<unk>
+auto_main	noteself:memo	添加备忘录
+
+auto_main	noteself:memo	write|<unk> a|<unk> memo|<unk> buy|<text> milk|<text>
+auto_main	noteself:memo	写一份备忘录买牛奶
+
+auto_main	radio:off	switch|<unk> radio|<unk> off|<unk>
+auto_main	radio:off	关掉收音机
+
+auto_main	radio:play	play|<unk> radio|<unk>
+auto_main	radio:play	播放电台
+
+auto_main	setting_control:open	turn|<unk> on|<unk> driver|<seat_position> seat|<setting> heating|<setting>
+auto_main	setting_control:open	打开驾驶座加热
+
+auto_main	sms:forward	forward|<unk> this|<objectanaph> picture|<objectanaph> to|<unk> joe|<contact> through|<unk> wechat|<provider>
+auto_main	sms:forward	通过微信将这张照片转发给乔
+
+auto_main	sms:forward	forward|<unk> a|<unk> text|<unk> to|<unk> joe|<contact> through|<unk> wechat|<provider>
+auto_main	sms:forward	通过微信将文字转发给乔
+
+auto_main	sms:forward	forward|<unk> a|<unk> text|<unk> to|<unk> mother|<contact_relation>
+auto_main	sms:forward	将文字转发给母亲
+
+auto_main	sms:forward	forward|<unk> this|<objectanaph> picture|<objectanaph> to|<unk> my|<contact_relation> mother|<contact_relation> through|<unk> wechat|<provider>
+auto_main	sms:forward	通过微信将这张照片转发给我母亲
+
+auto_main	sms:forward	forward|<unk> text|<unk> to|<unk> my|<contact_relation> father|<contact_relation> on|<unk> five|<pn> nine|<pn> six|<pn> zero|<pn>
+auto_main	sms:forward	我的父亲在五点九零零的前言
+
+auto_main	sms:forward	forward|<unk> a|<unk> text|<unk> to|<unk> mum|<contact_relation> through|<unk> wechat|<provider>
+auto_main	sms:forward	通过微信将文本转发给妈妈
+
+auto_main	sms:forward	forward|<unk> a|<unk> text|<unk> to|<unk> dad|<contact_relation> 's|<unk> work|<type> phone|<unk>
+auto_main	sms:forward	把文字转发给爸爸的工作电话
+
+auto_main	social:post:content	i|<unk> need|<unk> to|<unk> post|<unk> a|<unk> new|<unk> status|<unk>
+auto_main	social:post:content	我需要发布一个新的状态
+
+auto_main	social:post:content	post|<unk> this|<objectanaph> video|<objectanaph>
+auto_main	social:post:content	发布此视频
+
+auto_main	social:post:content	post|<unk> this|<objectanaph> video|<objectanaph> on|<unk> facebook|<service>
+auto_main	social:post:content	在Facebook上发布此视频
+
+auto_main	social:post:content	post|<unk> a|<unk> new|<unk> status|<unk> on|<unk> facebook|<service>
+auto_main	social:post:content	在facebook上发布新状态
+
+auto_main	social:post:content	post|<unk> a|<unk> new|<unk> status|<unk> wish|<status> me|<status> luck|<status>
+auto_main	social:post:content	发布新的状态祝我好运
+
+auto_main	stock:def	search|<unk> stock|<unk>
+auto_main	stock:def	搜索股票
+
+auto_main	stock:def	lookup|<unk> google|<business> stock|<unk>
+auto_main	stock:def	查找谷歌股票
+
+auto_main	stock:def	how|<unk> is|<unk> nuance|<business> stock|<unk> doing|<unk> today|<date>
+auto_main	stock:def	细微差别库存如何做到今天
+
+auto_main	stock:def	how|<unk> is|<unk> google|<business> doing|<unk> today|<date> on|<unk> the|<unk> new|<exchange> york|<exchange> stock|<exchange> exchange|<exchange>
+auto_main	stock:def	谷歌今天如何在纽约证券交易所上市
+
+auto_main	stock:def	how|<unk> is|<unk> nuance|<business> stock|<unk> doing|<unk> on|<unk> the|<unk> london|<exchange> stock|<exchange> exchange|<exchange>
+auto_main	stock:def	细微差别股如何在伦敦证券交易所上市
+
+auto_main	stock:def	search|<unk> stock|<unk> from|<unk> yesterday|<date>
+auto_main	stock:def	从昨天开始搜索股票
+
+auto_main	stock:def	show|<unk> me|<unk> the|<unk> stock|<unk> on|<unk> the|<unk> new|<exchange> york|<exchange> stock|<exchange> exchange|<exchange> today|<date>
+auto_main	stock:def	今天向我展示纽约证券交易所的股票
+
+auto_main	stock:def	search|<unk> the|<unk> nasdaq|<index> index|<index> on|<unk> the|<unk> london|<exchange> stock|<exchange> exchange|<exchange> today|<date>
+auto_main	stock:def	今天在伦敦证券交易所搜索纳斯达克指数
+
+auto_main	stock:def	search|<unk> the|<unk> nasdaq|<index> index|<index> highest|<query> price|<query> on|<unk> the|<unk> london|<exchange> stock|<exchange> exchange|<exchange> today|<date>
+auto_main	stock:def	今天在伦敦证券交易所搜索纳斯达克指数最高价
+
+auto_main	stock:def	search|<unk> the|<unk> nasdaq|<index> index|<index> yesterday|<date>
+auto_main	stock:def	昨天搜索纳斯达克指数
+
+auto_main	stock:def	show|<unk> me|<unk> the|<unk> stock|<unk> on|<unk> the|<unk> new|<exchange> york|<exchange> stock|<exchange> exchange|<exchange>
+auto_main	stock:def	告诉我纽约证券交易所的股票
+
+auto_main	stock:def	search|<unk> the|<unk> nasdaq|<index> index|<index>
+auto_main	stock:def	搜索纳斯达克指数
+
+auto_main	task:add	add|<unk> the|<unk> task|<unk> clean|<title> oven|<title> with|<unk> reminder|<unk> tomorrow|<reminderdate> when|<reminder_temporal_reference> i|<reminder_temporal_reference> arrive|<reminder_temporal_reference>
+auto_main	task:add	当我到达时，明天添加任务清洁烤箱和提醒
+
+auto_main	task:add	add|<unk> a|<unk> new|<unk> task|<unk> with|<unk> reminder|<unk> tomorrow|<reminderdate> at|<remindertime> one|<remindertime> pm|<remindertime>
+auto_main	task:add	明天下午一点添加一个带有提醒的新任务
+
+auto_main	task:add	add|<unk> a|<unk> new|<unk> task|<unk> clean|<title> house|<title> with|<unk> reminder|<unk> tomorrow|<reminderdate> at|<remindertime> one|<remindertime> pm|<remindertime>
+auto_main	task:add	明天下午1点添加一个新的任务干净的房子
+
+auto_main	task:add	add|<unk> a|<unk> new|<unk> task|<unk> clean|<title> house|<title> with|<unk> reminder|<unk> at|<unk> one|<remindertime> pm|<remindertime>
+auto_main	task:add	在下午一点添加一个带有提醒的新任务干净的房子
+
+auto_main	thirdparty:admin	which|<unk> province|<unk> does|<unk> wuhan|<unk> belong|<unk> to|<unk>
+auto_main	thirdparty:admin	武汉属于哪个省
+
+auto_main	thirdparty:calculate	calculate|<unk> four|<unk> plus|<unk> five|<unk>
+auto_main	thirdparty:calculate	计算四加五
+
+auto_main	thirdparty:contact	what|<unk> is|<unk> the|<unk> area|<unk> code|<unk> for|<unk> beijing|<unk>
+auto_main	thirdparty:contact	北京的区号是多少？
+
+auto_main	thirdparty:def	introduce|<unk> the|<unk> song|<unk> dynasty|<unk>
+auto_main	thirdparty:def	介绍歌曲王朝
+
+auto_main	thirdparty:lottery	super|<unk> lotto|<unk> lottery|<unk> results|<unk>
+auto_main	thirdparty:lottery	超级乐透彩票结果
+
+auto_main	thirdparty:translate	what|<unk> does|<unk> the|<unk> dandelion|<unk> say|<unk> in|<unk> english|<unk>
+auto_main	thirdparty:translate	蒲公英用英语怎么说
+
+auto_main	trafficviolation:inquiry	do|<unk> i|<unk> have|<unk> unpaid|<unk> traffic|<unk> violation|<unk> tickets|<unk>
+auto_main	trafficviolation:inquiry	我有未支付的交通违规罚单吗？
+
+auto_main	trafficviolation:inquiry	check|<unk> if|<unk> i|<unk> have|<unk> any|<unk> traffic|<unk> violation|<unk> on|<unk> march|<date> twenty|<date> first|<date>
+auto_main	trafficviolation:inquiry	检查我是否在3月20日有任何交通违规行为
+
+auto_main	wcis:def	what|<unk> can|<unk> i|<unk> say|<unk> to|<unk> write|<unk> a|<unk> message|<unk>
+auto_main	wcis:def	我怎么说才能写信息
+
+auto_main	weather:lookup	give|<unk> me|<unk> weather|<unk>
+auto_main	weather:lookup	给我天气
+
+auto_main	weather:lookup	go|<unk> to|<unk> tomorrow|<date> afternoon|<time> 's|<unk> weather|<unk> for|<unk> brooklyn|<loc>
+auto_main	weather:lookup	去明天下午去布鲁克林的天气
+
+auto_main	weather:lookup	i'd|<unk> like|<unk> a|<unk> five|<date> day|<date> overview|<unk> of|<unk> the|<unk> weather|<unk> for|<unk> my|<locref> destination|<locref>
+auto_main	weather:lookup	我想要为我的目的地提供五天的天气概况
+
+auto_main	weather:lookup	please|<unk> show|<unk> me|<unk> friday|<date> evening|<time> 's|<unk> weather|<unk> forecast|<unk> for|<unk> the|<unk> region|<locref>
+auto_main	weather:lookup	请告诉我星期五晚上对该地区的天气预报
+
+auto_main	weather:lookup	go|<unk> to|<unk> the|<unk> weather|<unk> forecast|<unk> for|<unk> the|<unk> evening|<time> of|<unk> july|<date> ninth|<date>
+auto_main	weather:lookup	转到7月9日晚的天气预报
+
+auto_main	weather:lookup	will|<unk> it|<unk> be|<unk> icy|<weatheract> two|<date> days|<date> from|<date> now|<time>
+auto_main	weather:lookup	从现在起两天后会不会结冰
+
+auto_main	weather:lookup	what|<unk> is|<unk> the|<unk> highest|<query_modifier> temperature|<weatheract> and|<unk> the|<unk> lowest|<query_modifier#1> temperature|<weatheract#1> in|<unk> beijing|<loc>
+auto_main	weather:lookup	北京的最高气温和最低气温是多少？
+
+auto_main	weather:lookup	can|<unk> you|<unk> show|<unk> me|<unk> the|<unk> current|<time> weather|<unk> for|<unk> fort|<loc> myers|<loc> please|<unk>
+auto_main	weather:lookup	你能告诉我迈尔斯堡目前的天气吗？
+
+auto_main	weather:lookup	what|<unk> is|<unk> the|<unk> highest|<query_modifier> temperature|<weatheract> and|<unk> the|<unk> lowest|<query_modifier#1> temperature|<weatheract#1>
+auto_main	weather:lookup	什么是最高温度和最低温度
+
