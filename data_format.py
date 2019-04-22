@@ -22,3 +22,9 @@ def add_label(data, topic, sep='\t'):
         new_item = topic + sep + item
         res.append(new_item)
     return res
+
+
+def tag_mask(data, mask, to_mask):
+    import re
+    for i in range(len(data)):
+        data[i] = re.sub(to_mask, mask, data[i])
