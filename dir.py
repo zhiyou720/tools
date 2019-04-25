@@ -21,20 +21,19 @@ def load_file_name(path):
         return root, dirs, files
 
 
-def load_all_file_name(path, list_name, suffix=''):
+def load_all_file_name(path, list_name, suffix='', not_include=''):
     """
     Load all file name including sub folder
     :param path:
     :param list_name:
     :param suffix:
+    :param not_include:
     :return:
     """
     for file in os.listdir(path):
         file_path = os.path.join(path, file)
-        print(file)
-        print(file_path)
-        if os.path.isdir(file_path):
-            load_all_file_name(file_path, list_name)
+        if os.path.isdir(file_path) and not_include not in file_path:
+            load_all_file_name(file_path, list_name, not_include)
         elif os.path.splitext(file_path)[1] == suffix:
             list_name.append(file_path)
 
