@@ -33,3 +33,13 @@ def save_txt_file(data, path, end='', re_sub=''):
         for item in data:
             tmp = re.sub(re_sub, '', item)
             f.write(tmp + end)
+
+
+def save_variable(variable, path):
+    """
+    :param variable:
+    :param path:
+    :return:
+    """
+    import pickle
+    return pickle.dump(variable, open(path, 'wb'))

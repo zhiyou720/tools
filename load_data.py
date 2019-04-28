@@ -40,5 +40,14 @@ def load_excel_data(path):
     return pd.read_excel(path).loc[:]
 
 
+def load_variable(path):
+    """
+    :param path:
+    :return:
+    """
+    import pickle
+    return pickle.load(open(path, 'rb'))
+
+
 if __name__ == '__main__':
     pass
