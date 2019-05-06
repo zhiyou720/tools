@@ -258,6 +258,7 @@ def train(fi, fo, cbow, neg, dim, alpha, win, min_count, binary):
 
     # Init net
     syn0, syn1 = init_net(dim, len(vocab))
+    print(syn0, syn1)
 
     table = None
     if neg > 0:
@@ -385,5 +386,4 @@ def main():
 
 if __name__ == '__main__':
     file_in = './data/test_data.txt'
-    a = Vocab(file_in, 0)
     train(file_in, 'out.txt', 1, 2, 300, 0.001, 2, 0, 0)
