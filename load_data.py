@@ -9,10 +9,11 @@
 """
 
 
-def load_txt_data(path):
+def load_txt_data(path, mode='utf-8-sig'):
     """
     This func is used to reading txt file
     :param path: path where file stored
+    :param mode:
     :type path: str
     :return: string lines in file in a list
     :rtype: list
@@ -20,9 +21,14 @@ def load_txt_data(path):
     if type(path) != str:
         raise TypeError
     res = []
-    with open(path, 'r', encoding='utf-8-sig') as f:
-        for line in f.readlines():
+
+    file = open(path, 'rb')
+    lines = file.read().decode(mode, 'ignore')
+    for line in lines.split('\n'):
+        line = line.strip()
+        if line:
             res.append(line)
+    file.close()
     return res
 
 

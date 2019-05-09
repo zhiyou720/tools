@@ -21,7 +21,7 @@ def load_file_name(path):
         return root, dirs, files
 
 
-def load_all_file_name(path, list_name, suffix='', not_include=''):
+def load_all_file_name(path, list_name, suffix='', not_include='.py'):
     """
     Load all file name including sub folder
     :param path:
@@ -33,7 +33,7 @@ def load_all_file_name(path, list_name, suffix='', not_include=''):
     for file in os.listdir(path):
         file_path = os.path.join(path, file)
         if os.path.isdir(file_path) and not_include not in file_path:
-            load_all_file_name(file_path, list_name, not_include)
+            load_all_file_name(file_path, list_name, suffix, not_include)
         elif os.path.splitext(file_path)[1] == suffix:
             list_name.append(file_path)
 

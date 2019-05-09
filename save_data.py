@@ -9,7 +9,7 @@
 """
 
 
-def save_txt_file(data, path, end='', re_sub=''):
+def save_txt_file(data, path, end='', re_sub=[]):
     """
     This func is used to saving data to txt file
     support data type:
@@ -31,7 +31,9 @@ def save_txt_file(data, path, end='', re_sub=''):
 
     with open(path, 'a', encoding='utf-8-sig') as f:
         for item in data:
-            tmp = re.sub(re_sub, '', item)
+            tmp = item
+            for pa in re_sub:
+                tmp = re.sub(pa, '', tmp)
             f.write(tmp + end)
 
 

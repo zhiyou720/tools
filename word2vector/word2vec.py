@@ -13,6 +13,9 @@ import math
 import struct
 import sys
 import numpy as np
+from tqdm import tqdm
+from tools.load_data import load_variable
+from tools.dir import mkdir
 
 
 class VocabItem:
@@ -186,7 +189,7 @@ class UnigramTable:
         print('Filling unigram table')
         p = 0  # Cumulative probability
         i = 0
-        for j, unigram in enumerate(vocab):
+        for j, unigram in tqdm(enumerate(vocab)):
             p += float(math.pow(unigram.count, power)) / norm
             while i < table_size and float(i) / table_size < p:
                 table[i] = j
@@ -198,34 +201,11 @@ class UnigramTable:
         return [self.table[i] for i in indices]
 
 
-# def __init_process(*args):
-#     global vocab, syn0, syn1, table, cbow, neg, dim, starting_alpha
-#     global win, num_processes, global_word_count, fi
-#
-#     vocab, syn0_tmp, syn1_tmp, table, cbow, neg, dim, starting_alpha, win, num_processes, global_word_count = args[:-1]
-#     fi = open(args[-1], 'r', encoding='utf-8')
-#     with warnings.catch_warnings():
-#         warnings.simplefilter('ignore', RuntimeWarning)
-#         syn0 = np.ctypeslib.as_array(syn0_tmp)
-#         syn1 = np.ctypeslib.as_array(syn1_tmp)
-
-
 def sigmoid(z):
     return 1 / (1 + math.exp(-z))
 
 
 def init_net(dim, vocab_size):
-    # Init syn0 with random numbers from a uniform distribution on the interval [-0.5, 0.5]/dim
-    # tmp = np.random.uniform(low=-0.5 / dim, high=0.5 / dim, size=(vocab_size, dim))
-    # syn0 = np.ctypeslib.as_ctypes(tmp)
-    # syn0 = Array(syn0._type_, syn0, lock=False)
-
-    # Init syn1 with zeros
-    # tmp = np.zeros(shape=(vocab_size, dim))
-    # syn1 = np.ctypeslib.as_ctypes(tmp)
-    # syn1 = Array(syn1._type_, syn1, lock=False)
-
-    # return (syn0, syn1)
     return np.random.uniform(low=-0.5 / dim, high=0.5 / dim, size=(vocab_size, dim)), np.zeros(shape=(vocab_size, dim))
 
 
@@ -252,15 +232,36 @@ def save(vocab, syn0, fo, binary):
     f.close()
 
 
-def train(fi, fo, cbow, neg, dim, alpha, win, min_count, binary):
+def save_parameter(w, w_hat, vocab, model_type, epoch_num):
+    from tools.save_data import save_variable
+    mkdir('./check_point/{}/'.format(model_type))
+    save_variable(w, './check_point/{}/look_up_table_vocab_size_{}_epoch_{}'.format(model_type, len(vocab), epoch_num))
+    save_variable(w_hat,
+                  './check_point/{}/format_vector_vocab_size_{}_epoch_{}'.format(model_type, len(vocab), epoch_num))
+    save_variable(vocab, './check_point/{}/vocab_size_{}'.format(model_type, len(vocab)))
+
+
+def train(fi, vocab, cbow, neg, dim, alpha, win, epoch_num):
     # Read train file to init vocab
-    vocab = Vocab(fi, min_count)
+
+    model_type = None
+    if cbow == 1:
+        model_type = 'cbow'
+    if cbow == 0:
+        model_type = 'skip_gram'
 
     # Init net
-    syn0, syn1 = init_net(dim, len(vocab))
-    print(syn0, syn1)
+    if epoch_num == 1:
+        syn0, syn1 = init_net(dim, len(vocab))
+    # print(syn0, syn1)
+    else:
+        syn0 = load_variable(
+            './check_point/{}/look_up_table_vocab_size_{}_epoch_{}'.format(model_type, len(vocab), epoch_num - 1))
+        syn1 = load_variable(
+            './check_point/{}/format_vector_vocab_size_{}_epoch_{}'.format(model_type, len(vocab), epoch_num - 1))
 
     table = None
+
     if neg > 0:
         print('Initializing unigram table')
         table = UnigramTable(vocab)
@@ -269,9 +270,8 @@ def train(fi, fo, cbow, neg, dim, alpha, win, min_count, binary):
         vocab.encode_huffman()
 
     word_count = 0
-    starting_alpha = alpha
     f = open(fi, 'r', encoding='utf-8')
-    for line in f.readlines():
+    for line in tqdm(f.readlines()):
         line = line.strip()
         # Skip blank lines
         if not line:
@@ -281,22 +281,7 @@ def train(fi, fo, cbow, neg, dim, alpha, win, min_count, binary):
         sent = vocab.indices(['<bol>'] + line.split() + ['<eol>'])
 
         for sent_pos, token in enumerate(sent):
-            # print(sent) # [0, 3, 4, 2, 5, 1]
-            # print(sent_pos, token) # 0 0; 1 3...
-            # if word_count % 10000 == 0:
-            #
-            #     # Recalculate alpha
-            #     alpha = starting_alpha * (1 - float(global_word_count) / vocab.word_count)
-            #     if alpha < starting_alpha * 0.0001:
-            #         alpha = starting_alpha * 0.0001
-            #
-            #     # Print progress info
-            #     sys.stdout.write("\rAlpha: %f Progress: %d of %d (%.2f%%)" %
-            #                      (alpha, global_word_count, vocab.word_count,
-            #                       float(global_word_count) / vocab.word_count * 100))
-            #     sys.stdout.flush()
 
-            # Randomize window size, where win is the max window size
             current_win = np.random.randint(low=1, high=win + 1)
             context_start = max(sent_pos - current_win, 0)
             context_end = min(sent_pos + current_win + 1, len(sent))
@@ -317,10 +302,10 @@ def train(fi, fo, cbow, neg, dim, alpha, win, min_count, binary):
                 else:
                     classifiers = zip(vocab[token].path, vocab[token].code)
                 for target, label in classifiers:
-                    z = np.dot(neu1, syn1[target])
-                    p = sigmoid(z)
+                    x = np.dot(neu1, syn1[target])
+                    p = sigmoid(x)
                     g = alpha * (label - p)
-                    neu1e += g * syn1[target]  # Error to backpropagate to syn0
+                    neu1e += g * syn1[target]  # Error to back propagate to syn0
                     syn1[target] += g * neu1  # Update syn1
 
                 # Update syn0
@@ -339,8 +324,8 @@ def train(fi, fo, cbow, neg, dim, alpha, win, min_count, binary):
                     else:
                         classifiers = zip(vocab[token].path, vocab[token].code)
                     for target, label in classifiers:
-                        z = np.dot(syn0[context_word], syn1[target])
-                        p = sigmoid(z)
+                        x = np.dot(syn0[context_word], syn1[target])
+                        p = sigmoid(x)
                         g = alpha * (label - p)
                         neu1e += g * syn1[target]  # Error to backpropagate to syn0
                         syn1[target] += g * syn0[context_word]  # Update syn1
@@ -350,16 +335,14 @@ def train(fi, fo, cbow, neg, dim, alpha, win, min_count, binary):
 
             word_count += 1
 
-    # Print progress info
-    # global_word_count += (word_count - last_word_count)
-    # sys.stdout.write("\rAlpha: %f Progress: %d of %d (%.2f%%)" %
-    #                  (alpha, global_word_count, vocab.word_count,
-    #                   float(global_word_count) / vocab.word_count * 100))
-    # sys.stdout.flush()
     f.close()
+    # syn0 = w
+    # w * vocab_one_hot = word_vector
+    # so we must save w and vacab_one_hot
+    save_parameter(syn0, syn1, vocab, model_type, epoch_num)
 
     # Save model to file
-    save(vocab, syn0, fo, binary)
+    # save(vocab, syn0, fo, binary)
 
 
 def main():
@@ -375,15 +358,19 @@ def main():
     parser.add_argument('-window', help='Max window length', dest='win', default=5, type=int)
     parser.add_argument('-min-count', help='Min count for words used to learn <unk>', dest='min_count', default=5,
                         type=int)
-    parser.add_argument('-binary', help='1 for output model in binary format, 0 otherwise', dest='binary', default=0,
-                        type=int)
-    # TO DO: parser.add_argument('-epoch', help='Number of training epochs', dest='epoch', default=1, type=int)
+    # parser.add_argument('-batch', help='Size of batch', dest='batch', default=8, type=int)
+    parser.add_argument('-epoch', help='Number of training epochs', dest='epoch', default=1, type=int)
     args = parser.parse_args()
 
-    train(args.fi, args.fo, bool(args.cbow), args.neg, args.dim, args.alpha, args.win,
-          args.min_count, bool(args.binary))
+    vocab = Vocab(args.fi, args.min_count)
+
+    for epoch_num in tqdm(range(1, args.epoch)):
+        train(args.fi, vocab, bool(args.cbow), args.neg, args.dim, args.alpha, args.win, epoch_num)
 
 
 if __name__ == '__main__':
     file_in = './data/test_data.txt'
-    train(file_in, 'out.txt', 1, 2, 300, 0.001, 2, 0, 0)
+    _vocab = Vocab(file_in, 0)
+    for i in tqdm(range(1, 4)):
+        print('Epoch {}'.format(i))
+        train(file_in, _vocab, 1, 0, 150, 0.001, 2, i)
