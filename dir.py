@@ -60,5 +60,15 @@ def mkdir(path):
         os.makedirs(path)
 
 
+def clean_old_file(path):
+    """
+    :param path:
+    :type path: str
+    :return:
+    """
+    if check_dir(path):
+        os.remove(path)
+
+
 if __name__ == '__main__':
     pass

@@ -9,7 +9,7 @@
 """
 
 
-def save_txt_file(data, path, end='', re_sub=[]):
+def save_txt_file(data, path, end='\n'):
     """
     This func is used to saving data to txt file
     support data type:
@@ -22,19 +22,14 @@ def save_txt_file(data, path, end='', re_sub=[]):
     :param path: path to save
     :type path: str
     :param end:
-    :param re_sub:
     :return: None
     """
-    import re
     if type(data) not in [list, dict, str, tuple, set] or type(path) != str:
         raise TypeError
 
-    with open(path, 'a', encoding='utf-8-sig') as f:
+    with open(path, 'a', encoding='utf-8') as f:
         for item in data:
-            tmp = item
-            for pa in re_sub:
-                tmp = re.sub(pa, '', tmp)
-            f.write(tmp + end)
+            f.write(item + end)
 
 
 def save_variable(variable, path):
