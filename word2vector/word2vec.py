@@ -15,9 +15,7 @@ import struct
 import sys
 import numpy as np
 from tqdm import tqdm
-from tools.save_data import save_variable
-from tools.load_data import load_variable
-from tools.dir import mkdir, check_dir
+from tools.dataio import save_variable, load_variable, mkdir, check_dir
 
 
 class VocabItem:

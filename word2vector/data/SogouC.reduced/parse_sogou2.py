@@ -10,9 +10,7 @@
 import re
 import jieba
 from tqdm import tqdm
-from tools.dir import load_all_file_name
-from tools.load_data import load_txt_data
-from tools.save_data import save_txt_file
+from tools.dataio import load_txt_data, save_txt_file, load_all_file_name
 
 if __name__ == '__main__':
     tmp = []
